@@ -1,0 +1,211 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+
+  "header": {
+    "greeting": "Hi, I'm",
+    "sub1": "Fullstack Software Engineer",
+    "sub2": "UI/UX Designer",
+    "sub3": "Games Geek"
+  },
+
+  "about": {
+    "overview": "Overview",
+    "content": "I began my programming journey in high school about eight years ago, focusing on <orange>UI design</orange> and <orange>frontend development</orange>. Over the past two years of my professional career, I have expanded my skills in <orange>backend</orange> and <orange>database management</orange>, becoming more adaptable and eager to learn.<br/> Through both university studies and professional work, I have gained strong <orange>teamwork experience</orange> — actively engaging in code reviews, project planning, and team discussions. My four years as a tutor have also strengthened my <orange>communication</orange> and teaching skills. <br/>I am a <orange>fast learner</orange> who enjoys collaboration and continuous self-improvement, aiming to create projects that combine functionality with excellent user experience.",
+    "tiles": {
+      "sdlc": "Uderstand SDLC principles",
+      "knowledge": "Open to acquiring new knowledge",
+      "scrum": "Experienced in Agile methodologies",
+      "communicative": "Communicative and flexible",
+      "ui": "Focused on user experience",
+      "tech": "Technical versatility"
+    }
+  },
+  "experience": {
+    "subtitle": "Professional Path",
+    "keyResponsibilities": "Key Responsibilities:",
+    "technologies": "Technologies:",
+    "items": [
+      {
+        "img": "img/experience/codibly.png",
+        "title": "QA Intern – Codibly S.A.",
+        "date": "Feb. 2019 - May 2019",
+        "description": "My first job in the IT sector, completed as part of a high school internship program. It was a period of intensive learning, during which I gained insight into teamwork dynamics and the process of software development and testing. I participated in training sessions, project meetings, and daily tasks, gradually improving my technical skills and understanding of industry best practices.",
+        "responsibilities": [
+          "Conducting stress tests using JMeter",
+          "Writing tests for frontend components",
+          "Performing manual unit tests and reporting results",
+          "Participating in training sessions on software testing methodologies",
+          "Attending team meetings focused on work organization and task planning",
+          "Developing simple web applications to enhance technical skills"
+        ],
+        "technologies": [
+          "JMeter",
+          "Jest",
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Agile Scrum",
+          "Software Testing"
+        ]
+      },
+      {
+        "img": "img/experience/aptiv.png",
+        "title": "Technical Assistant – Aptiv Services Poland",
+        "date": "Oct. 2020 – Nov. 2020",
+        "description": "The second internship completed as part of my high school program, this time with a stronger focus on working with network systems and their physical maintenance. I was responsible for assembling integrated circuits, providing technical support to senior staff, and developing simple Python scripts for testing closed network systems.",
+        "responsibilities": [
+          "Maintenance of physical network and electronic infrastructure",
+          "Installation and testing of integrated circuits and hardware components",
+          "Providing helpdesk and on-site technical support",
+          "Developing simple Python scripts for testing and diagnostics",
+          "Troubleshooting and performing minor hardware repairs"
+        ],
+        "technologies": [
+          "Python",
+          "Electronics",
+          "Hardware installation",
+          "Diagnostics and troubleshooting"
+        ]
+      },
+      {
+        "img": "img/experience/edualy.png",
+        "title": "Tutor – Edualy",
+        "date": "Sep. 2021 – Present",
+        "description": "During my work as a tutor, I developed strong communication skills, patience, and an individualized approach to students. I learned how to effectively explain complex concepts in an accessible way, foster motivation, and support the development of analytical thinking and independent problem-solving skills.",
+        "responsibilities": [
+          "Preparing students for final exams in computer science, mathematics, and physics",
+          "Conducting lessons for vocational exam preparation",
+          "Providing academic-level tutoring in web technologies, algorithms, and data structures"
+        ],
+        "technologies": [
+          "Python",
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "MySQL",
+          "MS Office",
+          "Communication skills"
+        ]
+      },
+      {
+        "img": "img/experience/codibly-spyro.png",
+        "title": "Junior Software Developer – Codibly",
+        "date": "Jun. 2024 – Present",
+        "description": "As a member of the development team, I participated in the implementation of commercial projects in the field of e-mobility and renewable energy. My work involved designing and developing solutions for both client-side and server-side applications, as well as actively contributing to planning, requirements analysis, and process optimization within the team. I collaborated directly with clients, presenting project progress and proposing functional improvements, while also providing UX/UI design advice. Additionally, I supported the recruitment process of interns and continuously expanded my technical skills by learning new technologies.",
+        "responsibilities": [
+          "Designing and implementing frontend and backend functionalities",
+          "Collaborating with the project team on requirement refinement and sprint planning",
+          "Maintaining and extending existing system modules",
+          "Participating in daily Scrum meetings and code reviews",
+          "Assisting in the recruitment of interns and supporting their technical growth",
+          "Regularly presenting project progress and deliverables to the client",
+          "Learning and adopting new technologies in response to project needs",
+          "Providing active input on design and UX/UI aspects"
+        ],
+        "technologies": [
+          "React",
+          "Material UI",
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "PostgreSQL",
+          "Scrum",
+          "Git",
+          "Python",
+          "Docker",
+          "UX/UI"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "subtitle": "Gallery of my work",
+    "githubCard": {
+      "title": "View more on GitHub",
+      "subtitle": "Explore all my repositories and side projects."
+    },
+    "items": [
+      {
+        "name": "Snake Game",
+        "image": "img/projects/snake.gif",
+        "description": "Snake Game is essentially my first encounter withprogramming, created on <orange>Client-Side Application</orange> classes on my first year in highschool. <br/>The project is based on a simple <orange>interval</orange> with 'movement' of the snake, randomly generates the position of the fruit and uses a straightforward <orange>collision mechanism</orange>. I must admit that its presence here is primarily due to nostalgia",
+        "tags": [
+          { "name": "Highschool-Project", "color": "#4db8ff" },
+          { "name": "JavaScript", "color": "#00ffcc" },
+          { "name": "Game", "color": "#ff66cc" },
+          { "name": "Frontend", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://miernika.github.io/Snake-Game/",
+        "codeLink": "https://github.com/MiernikA/Snake-Game"
+      },
+      {
+        "name": "Weather App",
+        "image": "img/projects/weather.gif",
+        "description": "The Weather App is a full-stack application that provides <orange>weather forecasts</orange>, along with estimates of energy generated by <orange>photovoltaic panels</orange> for the upcoming week, based on the user's <orange>geolocation</orange>.<br/> Frontend is a React with <orange>Material-UI</orange>, which utilizes my Node.js endpoint. The application also offers a <orange>dark mode</orange> feature.",
+        "tags": [
+          { "name": "React", "color": "#00ffcc" },
+          { "name": "Node", "color": "#00ffcc" },
+          { "name": "App", "color": "#ff66cc" },
+          { "name": "Full-Stack", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://weather-app-sigma-navy.vercel.app/",
+        "codeLink": "https://github.com/MiernikA/weather-app"
+      },
+      {
+        "name": "Color Lines",
+        "image": "img/projects/balls.gif",
+        "description": "Project is a replica of the widely available <orange>Color Lines</orange> game (match 5). <br/>From a technical standpoint, it involves a <orange>grid</orange> of div elements generated at <orange>random positions</orange> with randomly colored balls. Win condition is based on the <orange>number of balls</orange> on the board, and the core of the game is the <orange>Depth-First Search (DFS)</orange> algorithm for <orange>pathfinding</orange>. The project is essentially 100% TypeScript",
+        "tags": [
+          { "name": "Highschool-Project", "color": "#4db8ff" },
+          { "name": "TypeScript", "color": "#00ffcc" },
+          { "name": "Game", "color": "#ff66cc" },
+          { "name": "Frontend", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://miernika.github.io/Color-Lines/",
+        "codeLink": "https://github.com/MiernikA/Color-Lines"
+      },
+      {
+        "name": "Mp3 Player",
+        "image": "img/projects/mp3.gif",
+        "description": "A project fulfilling the role of a <orange>music player</orange> with an interface and the capability of <orange>uploading</orange> custom playlists.<br/>The majority of the project is centered around the NodeJS backend, which handles the <orange>reading of music albums</orange> from the internal project folder and the <orange>storage of user-uploaded albums</orange>. On the frontend side, a simple <orange>CSS</orange> with additional <orange>animations</orange> is employed.",
+        "tags": [
+          { "name": "Highschool-Project", "color": "#4db8ff" },
+          { "name": "Node", "color": "#00ffcc" },
+          { "name": "App", "color": "#ff66cc" },
+          { "name": "Full-Stack", "color": "#ffc94d" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "subtitle": "Get in Touch",
+    "downloadCV": "Download CV",
+    "cvPolish": "CV (Polish)",
+    "cvEnglish": "CV (English)",
+    "details": "Contact details",
+    "form": {
+      "nameLabel": "Your Name:",
+      "namePlaceholder": "What's your name?",
+      "emailLabel": "Your Email:",
+      "emailPlaceholder": "What's your email address?",
+      "messageLabel": "Your Message:",
+      "messagePlaceholder": "What do you want to say?",
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "snackbar": {
+      "success": "Your email has been successfully delivered.",
+      "error": "Your email delivery was unsuccessful."
+    }
+  },
+  "goNext": "Next section"
+}

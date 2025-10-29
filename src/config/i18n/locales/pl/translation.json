@@ -1,0 +1,210 @@
+{
+  "navbar": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "experience": "Doświadczenie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "greeting": "Cześć, jestem",
+    "sub1": "Programista full-stack",
+    "sub2": "Projektant UI/UX",
+    "sub3": "Pasjonat gier"
+  },
+
+  "about": {
+    "overview": "Podsumowanie",
+    "content": "Swoją przygodę z programowaniem rozpocząłem w szkole średniej, około osiem lat temu, koncentrując się na <orange>projektowaniu interfejsów użytkownika</orange> i <orange>frontendzie</orange>. W ciągu ostatnich dwóch lat kariery zawodowej poszerzyłem swoje umiejętności w zakresie <orange>backendu</orange> oraz <orange>zarządzania bazami danych</orange>, stając się bardziej elastyczny i chętny do podejmowania pracy w nowych dla mnie dziedzinach. Zarówno studia, jak i praca zawodowa pozwoliły mi zdobyć cenne <orange>doświadczenie zespołowe</orange> — aktywnie uczestnicząc w przeglądach kodu, planowaniu projektów i dyskusjach technicznych. Cztery lata pracy jako korepetytor dodatkowo wzmocniły moje <orange>umiejętności komunikacyjne</orange> i dydaktyczne. Jestem <orange>szybko uczącą się osobą</orange>, która ceni <orange>współpracę</orange> i ciągły rozwój, dążąc do tworzenia projektów łączących funkcjonalność z doskonałym doświadczeniem użytkownika.",
+    "tiles": {
+      "sdlc": "Rozumienie zasad SDLC",
+      "knowledge": "Otwartość na zdobywanie nowej wiedzy",
+      "scrum": "Doświadczenie w metodykach Agile",
+      "communicative": "Komunikatywność i elastyczność",
+      "ui": "Skupienie na doświadczeniu użytkownika",
+      "tech": "Wszechstronność techniczna"
+    }
+  },
+  "experience": {
+    "subtitle": "Ścieżka zawodowa",
+    "keyResponsibilities": "Główne obowiązki:",
+    "technologies": "Technologie:",
+    "items": [
+      {
+        "img": "img/experience/codibly.png",
+        "title": "Stażysta tester – Codibly S.A.",
+        "date": "Luty 2019 - Maj 2019",
+        "description": "Moja pierwsza praca w sektorze IT, odbywana w ramach praktyk zawodowych w szkole średniej. Był to okres intensywnej nauki, w którym mogłem poznać realia pracy zespołowej oraz proces tworzenia i testowania oprogramowania. Brałem udział w szkoleniach, spotkaniach projektowych i codziennych zadaniach, stopniowo rozwijając swoje umiejętności techniczne oraz zrozumienie dobrych praktyk w branży.",
+        "responsibilities": [
+          "Przeprowadzanie testów obciążeniowych z wykorzystaniem JMeter",
+          "Pisanie testów do komponentów frontendowych",
+          "Wykonywanie manualnych testów jednostkowych i raportowanie wyników",
+          "Udział w szkoleniach z zakresu metodologii testowania oprogramowania",
+          "Uczestnictwo w spotkaniach zespołowych dotyczących organizacji pracy i planowania zadań",
+          "Tworzenie prostych aplikacji webowych w celu rozwoju umiejętności technicznych"
+        ],
+        "technologies": [
+          "JMeter",
+          "Jest",
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Agile Scrum",
+          "Testowanie oprogramowania"
+        ]
+      },
+      {
+        "img": "img/experience/aptiv.png",
+        "title": "Asystent technik – Aptiv Services Polska",
+        "date": "Paźdź. 2020 - Lis. 2020",
+        "description": "Drugi staż odbyty w ramach szkoły średniej, tym razem skoncentrowany w większym stopniu na pracy z systemami sieciowymi oraz ich fizycznym utrzymaniem. Zajmowałem się montażem układów scalonych, udzielałem wsparcia technicznego bardziej doświadczonym pracownikom, a także tworzyłem proste skrypty testowe dla zamkniętych układów sieciowych.",
+        "responsibilities": [
+          "Utrzymanie fizycznej infrastruktury sieciowej i systemów elektronicznych",
+          "Instalacja i testowanie układów scalonych oraz komponentów sprzętowych",
+          "Świadczenie wsparcia technicznego typu helpdesk",
+          "Tworzenie prostych skryptów w Pythonie do testów i diagnostyki",
+          "Diagnozowanie usterek i wykonywanie drobnych napraw sprzętu"
+        ],
+        "technologies": [
+          "Python",
+          "Elektronika",
+          "Instalacja komponentów sprzętowych",
+          "Diagnostyka i rozwiązywanie problemów"
+        ]
+      },
+      {
+        "img": "img/experience/edualy.png",
+        "title": "Korepetytor – Edualy",
+        "date": "Wrz. 2021 – obecnie",
+        "description": "Podczas pracy jako korepetytor rozwijałem umiejętności komunikacji, cierpliwości oraz indywidualnego podejścia do ucznia. Nauczyłem się skutecznie przekazywać złożone zagadnienia w przystępny sposób, budować motywację i wspierać rozwój kompetencji analitycznych oraz samodzielnego myślenia.",
+        "responsibilities": [
+          "Przygotowywanie uczniów do egzaminów maturalnych z informatyki, matematyki i fizyki",
+          "Prowadzenie zajęć przygotowujących do egzaminów zawodowych",
+          "Udzielanie korepetycji na poziomie akademickim z technologii webowych oraz zagadanień związanych z algorytmami i strukturami danych"
+        ],
+        "technologies": [
+          "Python",
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "MySQL",
+          "MS Office",
+          "Umiejętności komunikacyjne"
+        ]
+      },
+      {
+        "img": "img/experience/codibly-spyro.png",
+        "title": "Junior Software Developer – Codibly",
+        "date": "Cze. 2024 – obecnie",
+        "description": "Jako członek zespołu deweloperskiego uczestniczyłem w realizacji komercyjnych projektów z obszaru e-mobilności i energii odnawialnej. Moja praca obejmowała projektowanie i implementację rozwiązań zarówno po stronie klienta, jak i serwera, a także aktywny udział w planowaniu, analizie wymagań oraz usprawnianiu procesów w zespole. Współpracowałem bezpośrednio z klientami, prezentując wyniki prac i proponując usprawnienia funkcjonalne, miałem okazję służyć radą w zakresie tworzenie interfejsów użytkownika. Wspierałem również proces rekrutacji stażystów oraz regularnie poszerzałem swoje kompetencje, ucząc się nowych technologii.",
+        "responsibilities": [
+          "Projektowanie i implementacja funkcjonalności frontendu i backendu",
+          "Współpraca z zespołem projektowym nad doprecyzowaniem wymagań i planowaniem sprintów",
+          "Utrzymywanie i rozwijanie istniejących modułów systemu",
+          "Udział w codziennych spotkaniach zespołu Scrum oraz przeglądach kodu",
+          "Udział w procesie rekrutacji stażystów i wspieranie ich rozwoju technicznego",
+          "Regularne prezentowanie postępów i wyników prac klientowi",
+          "Nauka i wdrażanie nowych technologii w odpowiedzi na potrzeby projektowe",
+          "Aktywne doradzanie w kwestiach projektowych oraz UX/UI"
+        ],
+        "technologies": [
+          "ReactJS",
+          "Material UI",
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "PostgreSQL",
+          "Scrum",
+          "Git",
+          "Python",
+          "Docker",
+          "UX/UI"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "subtitle": "Galeria moich prac",
+    "githubCard": {
+      "title": "Zobacz więcej na GitHubie",
+      "subtitle": "Zobacz moje pozostałe repozytoria i projekty"
+    },
+    "items": [
+      {
+        "name": "Snake Game",
+        "image": "img/projects/snake.gif",
+        "description": "Snake Game to w zasadzie moje pierwsze spotkanie z programowaniem, projekt z <orange>aplikacji klienckich</orange> w pierwszej klasie technikum. <br/>Opiera się na prostym <orange>interwale</orange> sterującym „ruchem” węża, losowo generowanej pozycji owocu i wykorzystuje nieskomplikowany <orange>mechanizmy kolizji</orange>. Muszę przyznać, że obecność projektu tutaj wynika głównie z sentymentu.",
+        "tags": [
+          { "name": "Szkoła średnia", "color": "#4db8ff" },
+          { "name": "JavaScript", "color": "#00ffcc" },
+          { "name": "Gra", "color": "#ff66cc" },
+          { "name": "Frontend", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://miernika.github.io/Snake-Game/",
+        "codeLink": "https://github.com/MiernikA/Snake-Game"
+      },
+      {
+        "name": "Weather App",
+        "image": "img/projects/weather.gif",
+        "description": "Weather App to aplikacja typu full-stack, która dostarcza <orange>prognozy pogody</orange> wraz z szacunkami produkcji energii z <orange>paneli fotowoltaicznych</orange> na nadchodzący tydzień, bazując na <orange>geolokalizacji</orange> użytkownika.<br/>Frontend został stworzony w React z użyciem <orange>Material-UI</orange> i komunikuje się z moim endpointem w Node.js. Aplikacja oferuje również <orange>tryb ciemny</orange>.",
+        "tags": [
+          { "name": "React", "color": "#00ffcc" },
+          { "name": "Node", "color": "#00ffcc" },
+          { "name": "App", "color": "#ff66cc" },
+          { "name": "Full-Stack", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://weather-app-sigma-navy.vercel.app/",
+        "codeLink": "https://github.com/MiernikA/weather-app"
+      },
+      {
+        "name": "Color Lines",
+        "image": "img/projects/balls.gif",
+        "description": "Projekt jest repliką popularnej gry <orange>Color Lines</orange> (połącz 5). <br/>Od strony technicznej obejmuje <orange>siatkę</orange> elementów div generowanych w <orange>losowych pozycjach</orange> z losowo dobranymi kolorami kulek. Warunek zwycięstwa opiera się na <orange>liczbie kulek</orange> na planszy, a sednem rozgrywki jest algorytm <orange>Depth-First Search (DFS)</orange> używany do <orange>wyznaczania ścieżki</orange>. Projekt został w całości napisany w TypeScript.",
+        "tags": [
+          { "name": "Szkoła średnia", "color": "#4db8ff" },
+          { "name": "TypeScript", "color": "#00ffcc" },
+          { "name": "Gra", "color": "#ff66cc" },
+          { "name": "Frontend", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://miernika.github.io/Color-Lines/",
+        "codeLink": "https://github.com/MiernikA/Color-Lines"
+      },
+      {
+        "name": "Mp3 Player",
+        "image": "img/projects/mp3.gif",
+        "description": "Projekt pełniący rolę <orange>odtwarzacza muzyki</orange> z interfejsem i możliwością <orange>przesyłania</orange> własnych playlist.<br/>Większość logiki opiera się na backendzie w NodeJS, który odpowiada za <orange>odczyt albumów muzycznych</orange> z wewnętrznego folderu projektu oraz <orange>przechowywanie przesłanych przez użytkownika albumów</orange>. Po stronie frontendu zastosowano prosty <orange>CSS</orange> z dodatkowymi <orange>animacjami</orange>.",
+        "tags": [
+          { "name": "Szkoła średnia", "color": "#4db8ff" },
+          { "name": "Node", "color": "#00ffcc" },
+          { "name": "Aplikacja", "color": "#ff66cc" },
+          { "name": "Full-Stack", "color": "#ffc94d" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "subtitle": "Skontaktuj się ze mną",
+    "downloadCV": "Pobierz CV",
+    "cvPolish": "CV (Polski)",
+    "cvEnglish": "CV (Angielski)",
+    "details": "Dane kontaktowe",
+    "form": {
+      "nameLabel": "Twoje imię:",
+      "namePlaceholder": "Jak masz na imię?",
+      "emailLabel": "Twój e-mail:",
+      "emailPlaceholder": "Jaki jest Twój adres e-mail?",
+      "messageLabel": "Twoja wiadomość:",
+      "messagePlaceholder": "Co chcesz napisać?",
+      "send": "Wyślij",
+      "sending": "Wysyłanie..."
+    },
+    "snackbar": {
+      "success": "Twoja wiadomość została pomyślnie wysłana.",
+      "error": "Nie udało się wysłać wiadomości."
+    }
+  },
+  "goNext": "Następna sekcja"
+}
