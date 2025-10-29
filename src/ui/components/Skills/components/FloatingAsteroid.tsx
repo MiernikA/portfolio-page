@@ -11,6 +11,7 @@ const RANDOM_IMPULSE_SCALE = 0.6;
 const FLOAT_SPEED = 0.4;
 
 type Props = {
+  title: string;
   imgUrl: string;
   startPos: THREE.Vector3;
   asteroids: RefObject<THREE.Mesh[]>;
@@ -20,6 +21,7 @@ type Props = {
 };
 
 export const FloatingAsteroid = ({
+  title,
   imgUrl,
   startPos,
   asteroids,
@@ -41,11 +43,6 @@ export const FloatingAsteroid = ({
   const position = useRef(startPos.clone());
   const velocity = useRef(new THREE.Vector3());
   const [hovered, setHovered] = useState(false);
-
-  const techName = useMemo(
-    () => imgUrl.split("/").pop()?.replace(".png", "").toUpperCase() ?? "",
-    [imgUrl]
-  );
 
   useFrame(({ clock }) => {
     const mesh = meshRef.current;
@@ -108,7 +105,7 @@ export const FloatingAsteroid = ({
               pointerEvents: "none",
             }}
           >
-            {techName}
+            {title}
           </div>
         </Html>
       )}

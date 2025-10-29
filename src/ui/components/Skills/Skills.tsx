@@ -3,17 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import { useRef } from "react";
 import { FloatingAsteroid } from "./components/FloatingAsteroid";
+import { useSkillsList } from "./hooks/useSkillsList";
 
 const COLUMNS = 8;
 const SPACING = 3.2;
 
 export const Skills = () => {
-  const images = import.meta.glob("/public/img/skills/*.png", {
-    eager: true,
-    as: "url",
-  });
-
-  const skillIcons = Object.values(images);
+  const skills = useSkillsList();
   const asteroids = useRef<THREE.Mesh[]>([]);
   const bounds = { left: -12, right: 12, top: 6, bottom: -5 };
 
@@ -38,7 +34,7 @@ export const Skills = () => {
           <pointLight position={[-5, -5, -5]} intensity={0.7} />
 
           <group position={[0, -1.5, 0]}>
-            {skillIcons.map((imgUrl, i) => {
+            {skills.map((skill, i) => {
               const row = Math.floor(i / COLUMNS);
               const col = i % COLUMNS;
               const startPos = new THREE.Vector3(
@@ -49,8 +45,9 @@ export const Skills = () => {
 
               return (
                 <FloatingAsteroid
-                  key={imgUrl}
-                  imgUrl={imgUrl}
+                  key={skill.title}
+                  title={skill.title}
+                  imgUrl={skill.imgUrl}
                   startPos={startPos}
                   asteroids={asteroids}
                   floatOffset={Math.random() * Math.PI * 2}

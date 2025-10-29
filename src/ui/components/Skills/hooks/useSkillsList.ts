@@ -1,0 +1,28 @@
+export const useSkillsList = () => {
+  return [
+    { title: "Bootstrap", imgUrl: "/skills/bootstrap.png" },
+    { title: "CSS", imgUrl: "/skills/css.png" },
+    { title: "Docker", imgUrl: "/skills/docker.png" },
+    { title: "Figma", imgUrl: "/skills/figma.png" },
+    { title: "Git", imgUrl: "/skills/git.png" },
+    { title: "HTML", imgUrl: "/skills/html.png" },
+    { title: "Java", imgUrl: "/skills/java.png" },
+    { title: "JavaScript", imgUrl: "/skills/javascript.png" },
+    { title: "Jest", imgUrl: "/skills/jest.png" },
+    { title: "JetBrains", imgUrl: "/skills/jetbrains.png" },
+    { title: "Material UI", imgUrl: "/skills/mui.png" },
+    { title: "MySQL", imgUrl: "/skills/mysql.png" },
+    { title: "Next.js", imgUrl: "/skills/next.png" },
+    { title: "Node.js", imgUrl: "/skills/nodejs.png" },
+    { title: "Office", imgUrl: "/skills/office.png" },
+    { title: "Photoshop", imgUrl: "/skills/photoshop.png" },
+    { title: "PostgreSQL", imgUrl: "/skills/postgres.png" },
+    { title: "Python", imgUrl: "/skills/python.png" },
+    { title: "React", imgUrl: "/skills/reactjs.png" },
+    { title: "Spring Boot", imgUrl: "/skills/springBoot.png" },
+    { title: "Tailwind", imgUrl: "/skills/tailwind.png" },
+    { title: "Three.js", imgUrl: "/skills/threejs.png" },
+    { title: "TypeScript", imgUrl: "/skills/typescript.png" },
+    { title: "Vite", imgUrl: "/skills/vite.png" },
+  ];
+};
