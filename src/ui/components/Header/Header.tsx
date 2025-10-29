@@ -8,7 +8,7 @@ export const Header = () => {
   const titles = [t("header.sub1"), t("header.sub2"), t("header.sub3")];
 
   return (
-    <Box id="home">
+    <Box component="section" id="home">
       <Container
         maxWidth="xl"
         sx={{
