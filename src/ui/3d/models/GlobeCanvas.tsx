@@ -10,7 +10,7 @@ const LIGHT_INTENSITY = 7000;
 const LIGHT_POSITION: [number, number, number] = [45, 120, 120];
 const LIGHT_ANGLE = 0.6;
 const LIGHT_PENUMBRA = 0.5;
-const MODEL_SCALE = { mobile: 0.8, desktop: 1 };
+const MODEL_SCALE = { mobile: 0.5, desktop: 1 };
 const MODEL_POSITION: [number, number, number] = [30, 10, -15];
 const MODEL_ROTATION: [number, number, number] = [0, 1.5, 0.3];
 const HEMISPHERE_INTENSITY = 0.1;
@@ -73,7 +73,7 @@ export const GlobeCanvas = () => {
   const lastPos = useRef(new Vector2(0, 0));
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
     setIsMobile(mediaQuery.matches);
     const handleMediaQueryChange = (event: MediaQueryListEvent) =>
       setIsMobile(event.matches);

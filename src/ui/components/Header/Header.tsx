@@ -17,7 +17,6 @@ export const Header = () => {
           top: { xs: 100, lg: 130 },
           display: "flex",
           gap: 2,
-          mb: { xs: 123, lg: 0 },
         }}
       >
         <VerticalDivider />

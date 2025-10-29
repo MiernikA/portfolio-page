@@ -1,5 +1,5 @@
 import type { MouseEvent } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { useActiveSection } from "../../../../context/ActiveSectionProvider";
 import { useTranslation } from "react-i18next";
 import { RocketIcon } from "./RocketIcon";
@@ -8,6 +8,10 @@ import { motion } from "framer-motion";
 export const RocketButton = () => {
   const { activeSection, setActiveSection, sectionIds } = useActiveSection();
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  if (isMobile) return null;
 
   const getNextSection = () => {
     const currentIndex = sectionIds.indexOf(activeSection);

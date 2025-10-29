@@ -19,7 +19,7 @@ function App() {
         sx={{
           position: "relative",
           zIndex: 1,
-          top: { xs: 600, lg: 0 },
+          top: { xs: "150vh" },
           lineHeight: 1.6,
           "& > *": {
             mb: { xs: 60, lg: 0 },
