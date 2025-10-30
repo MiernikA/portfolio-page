@@ -1,7 +1,7 @@
 import { Decal, Html, useTexture } from "@react-three/drei";
 import { useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import * as THREE from "three";
-import { useMemo, useRef, useState, type RefObject } from "react";
+import { useMemo, useRef, useState, type RefObject, useEffect } from "react";
 import { createAsteroid } from "../utils/createAsteriod";
 import { handleCollisionsAndBounds } from "../utils/physicsUtils";
 
@@ -57,6 +57,13 @@ export const FloatingAsteroid = ({
 
     handleCollisionsAndBounds(mesh, asteroids, velocity.current, bounds);
   });
+
+  useEffect(() => {
+    document.body.style.cursor = hovered ? "pointer" : "default";
+    return () => {
+      document.body.style.cursor = "default";
+    };
+  }, [hovered]);
 
   const handleClick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();

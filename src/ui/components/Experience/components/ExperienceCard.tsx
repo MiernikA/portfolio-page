@@ -9,6 +9,7 @@ type Props = {
   total: number;
   showIcons: boolean;
   onClick: () => void;
+  isMobile: boolean;
 };
 
 export const ExperienceCard = ({
@@ -17,6 +18,7 @@ export const ExperienceCard = ({
   total,
   showIcons,
   onClick,
+  isMobile,
 }: Props) => {
   const isTop = index % 2 === 0;
 
@@ -24,15 +26,24 @@ export const ExperienceCard = ({
     <Box
       onClick={onClick}
       sx={{
-        position: "absolute",
-        left: `${(index / (total - 1)) * 100}%`,
-        top: isTop ? "calc(50% - 140px)" : "calc(50% + 40px)",
-        transform: "translateX(-50%)",
+        position: isMobile ? "static" : "absolute",
+        display: "flex",
+        justifyContent: isMobile ? "center" : "unset",
+        alignItems: "center",
+        flexDirection: "column",
+        left: isMobile ? "auto" : `${(index / (total - 1)) * 100}%`,
+        top: isMobile
+          ? "auto"
+          : isTop
+            ? "calc(50% - 140px)"
+            : "calc(50% + 40px)",
+        transform: isMobile ? "none" : "translateX(-50%)",
         cursor: "pointer",
         opacity: showIcons ? 1 : 0,
         transformOrigin: "center",
         transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
         transitionDelay: `${(index + 1) * 0.1}s`,
+        mb: isMobile ? 3 : 0,
       }}
     >
       <Box

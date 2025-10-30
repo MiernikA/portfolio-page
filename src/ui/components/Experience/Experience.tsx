@@ -52,7 +52,6 @@ export const Experience = () => {
             gap: isMobile ? 3 : 0,
           }}
         >
-          {/* Oś czasu – ukryta na mobilkach */}
           <Box
             sx={{
               width: "100%",
@@ -89,8 +88,6 @@ export const Experience = () => {
                 />
               ))}
           </Box>
-
-          {/* Karty */}
           {experiences.map((exp, i) => (
             <ExperienceCard
               key={exp.title}
@@ -99,6 +96,7 @@ export const Experience = () => {
               total={experiences.length}
               showIcons={showIcons || isMobile}
               onClick={() => setOpenIndex(i)}
+              isMobile={isMobile}
             />
           ))}
         </Box>

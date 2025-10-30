@@ -6,7 +6,11 @@ import {
   Stack,
   List,
   ListItem,
+  IconButton,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
+import { Close } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 
 type Experience = {
@@ -25,6 +29,8 @@ type Props = {
 
 export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Modal
@@ -32,7 +38,7 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
       onClose={onClose}
       sx={{
         display: "flex",
-        alignItems: "center",
+        alignItems: isMobile ? "stretch" : "center",
         justifyContent: "center",
       }}
     >
@@ -40,13 +46,27 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
         <Stack
           sx={{
             bgcolor: "#121212",
-            borderRadius: 8,
-            p: 4,
-            maxWidth: 800,
+            borderRadius: isMobile ? 0 : 8,
+            p: isMobile ? 3 : 4,
+            width: isMobile ? "100%" : 750,
+            height: isMobile ? "100vh" : "auto",
             outline: "none",
             color: "#fff",
           }}
         >
+          <IconButton
+            onClick={onClose}
+            sx={{
+              position: "absolute",
+              top: 8,
+              right: 8,
+              color: "primary.main",
+              zIndex: 10,
+            }}
+          >
+            <Close />
+          </IconButton>
+
           {experience && (
             <>
               <Typography
@@ -56,6 +76,7 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
                   color: "primary.main",
                   fontWeight: 700,
                   letterSpacing: 1,
+                  pr: 5,
                 }}
               >
                 {experience.title}
