@@ -14,7 +14,7 @@ const sections = [
   { component: <Experience />, mt: { xs: "170vh" } },
   { component: <Skills />, mt: { xs: 0 } },
   { component: <Projects />, mt: { xs: "100vh" } },
-  { component: <Contact />, mt: { xs: 0 } },
+  { component: <Contact />, mt: { xs: "120vh" } },
 ];
 
 function App() {

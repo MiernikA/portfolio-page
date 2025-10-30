@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { ProjectTags } from "./subcomponents/ProjectTags";
 import { ProjectButtons } from "./subcomponents/ProjectButtons";
 import { GithubCard } from "./subcomponents/GithubCard";
@@ -15,6 +15,8 @@ type Props = {
 export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,8 +48,8 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
     >
       <Box
         sx={{
-          width: 450,
-          height: 600,
+          width: isMobile ? "100%" : 450,
+          height: isMobile ? "auto" : 600,
           display: "flex",
           flexDirection: "column",
           borderRadius: 2,
@@ -124,7 +126,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
                   />
                 </Typography>
               </Box>
-              <ProjectTags tags={project.tags} />
+              {!isMobile && <ProjectTags tags={project.tags} />}
             </Box>
           </>
         )}

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 import { useTranslation } from "react-i18next";
 
@@ -7,13 +7,16 @@ export const GithubCard = () => {
     window.open("https://github.com/MiernikA?tab=repositories", "_blank");
   };
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
       onClick={handleClick}
       sx={{
-        width: 450,
-        height: 600,
+        width: isMobile ? "100%" : 450,
+        height: isMobile ? "auto" : 600,
+        minHeight: 300,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

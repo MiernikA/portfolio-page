@@ -1,5 +1,5 @@
 import { useRef, useState, type ChangeEvent, type FormEvent } from "react";
-import { Stack, Snackbar, Alert } from "@mui/material";
+import { Stack, Snackbar, Alert, useMediaQuery, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { SectionLayout } from "../shared/SectionLayout/SectionLayout";
@@ -28,6 +28,8 @@ export const Contact = () => {
   }>({ open: false, message: "", severity: "success" });
 
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -89,7 +91,18 @@ export const Contact = () => {
       subtitle={t("contact.subtitle")}
       title={t("navbar.contact")}
     >
-      <Stack direction="row" spacing={6} alignItems="stretch" sx={{ mt: 2 }}>
+      <Stack
+        direction={isMobile ? "column" : "row"}
+        spacing={6}
+        alignItems="stretch"
+        sx={{
+          mt: 2,
+          width: "100%",
+          "& > *": {
+            width: isMobile ? "100%" : "auto",
+          },
+        }}
+      >
         <ContactCard
           form={form}
           loading={loading}
@@ -102,7 +115,11 @@ export const Contact = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          style={{ width: "30%", position: "relative", height: "100%" }}
+          style={{
+            width: isMobile ? "100%" : "30%",
+            position: "relative",
+            height: "100%",
+          }}
         >
           <InfoCard />
         </motion.div>

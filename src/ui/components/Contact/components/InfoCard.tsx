@@ -1,4 +1,12 @@
-import { Box, Card, CardContent, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { GitHub, Phone, Email } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -6,12 +14,15 @@ import { DownloadCVButton } from "./DownloadCVButton";
 
 export const InfoCard = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
+      style={{ width: isMobile ? "100%" : "30rem" }}
     >
       <Card
         sx={{
@@ -19,7 +30,7 @@ export const InfoCard = () => {
           border: (t) => `2px solid ${t.palette.primary.main}60`,
           boxShadow: (t) => `0 0 25px ${t.palette.primary.main}25`,
           borderRadius: 3,
-          height: 600,
+          height: isMobile ? "auto" : 600,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -28,6 +39,7 @@ export const InfoCard = () => {
           "&:hover": {
             boxShadow: (t) => `0 0 35px ${t.palette.primary.main}60`,
           },
+          width: "100%",
         }}
       >
         <CardContent

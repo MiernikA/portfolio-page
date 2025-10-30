@@ -5,6 +5,8 @@ import {
   Card,
   CardContent,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -34,6 +36,8 @@ export const ContactCard = ({
   handleSubmit,
 }: Props) => {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <motion.form
@@ -42,7 +46,7 @@ export const ContactCard = ({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      style={{ width: "65%" }}
+      style={{ width: isMobile ? "100%" : "65%" }}
     >
       <Card
         sx={{
@@ -50,8 +54,9 @@ export const ContactCard = ({
           border: (t) => `2px solid ${t.palette.primary.main}60`,
           boxShadow: (t) => `0 0 25px ${t.palette.primary.main}25`,
           borderRadius: 3,
-          height: 600,
+          height: isMobile ? "auto" : 600,
           display: "flex",
+          width: "100%",
           transition: "box-shadow 0.3s ease",
           "&:hover": {
             boxShadow: (t) => `0 0 35px ${t.palette.primary.main}60`,
@@ -115,7 +120,7 @@ export const ContactCard = ({
             margin="dense"
           />
 
-          <Box sx={{ mt: 3 }}>
+          <Box sx={{ mt: 3, width: "100%", textAlign: "center" }}>
             <Button
               type="submit"
               variant="outlined"
