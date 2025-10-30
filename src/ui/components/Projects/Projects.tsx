@@ -49,8 +49,16 @@ export const Projects = () => {
             <Box
               key={item.name + index}
               sx={{
-                flex: "1 1 calc(33.333% - 2rem)",
-                maxWidth: 450,
+                flex: {
+                  xs: "1 1 100%",
+                  sm: "1 1 calc(50% - 2rem)",
+                  md: "1 1 calc(33.333% - 2rem)",
+                },
+                maxWidth: {
+                  xs: "100%",
+                  sm: "calc(50% - 2rem)",
+                  md: 450,
+                },
                 display: "flex",
                 justifyContent: "center",
               }}

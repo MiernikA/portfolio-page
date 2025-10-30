@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { CosmicBackground } from "./CosmicBackground.tsx";
+import { CosmicBackground } from "./ui/3d/models/CosmicBackground.tsx";
 import { Navbar } from "./ui/components/Navbar/Navbar.tsx";
 import { Header } from "./ui/components/Header/Header.tsx";
 import { AboutMe } from "./ui/components/AboutMe/AboutMe.tsx";
