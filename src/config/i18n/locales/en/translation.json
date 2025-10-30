@@ -182,7 +182,9 @@
           { "name": "Node", "color": "#00ffcc" },
           { "name": "App", "color": "#ff66cc" },
           { "name": "Full-Stack", "color": "#ffc94d" }
-        ]
+        ],
+        "demoLink": "https://miernika.github.io/mp3-player-demo/",
+        "codeLink": "https://github.com/MiernikA/mp3-player"
       }
     ]
   },
