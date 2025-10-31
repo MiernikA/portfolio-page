@@ -1,4 +1,5 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   exp: {
@@ -21,6 +22,7 @@ export const ExperienceCard = ({
   isMobile,
 }: Props) => {
   const isTop = index % 2 === 0;
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -28,7 +30,7 @@ export const ExperienceCard = ({
       sx={{
         position: isMobile ? "static" : "absolute",
         display: "flex",
-        justifyContent: isMobile ? "center" : "unset",
+        justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
         left: isMobile ? "auto" : `${(index / (total - 1)) * 100}%`,
@@ -64,6 +66,16 @@ export const ExperienceCard = ({
           },
         }}
       />
+      <Typography
+        variant="caption"
+        sx={{
+          mt: 1,
+          color: (theme) => theme.palette.text.secondary,
+          opacity: 0.8,
+        }}
+      >
+        {t("experience.clickToSeeMore")}
+      </Typography>
     </Box>
   );
 };
