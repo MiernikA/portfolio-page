@@ -11,7 +11,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useActiveSection } from "../../../context/ActiveSectionProvider";
+import { useActiveSection } from "../../../context/ActiveSectionProvider/ActiveSectionProvider";
 import { useNavLinks } from "./hooks/useNavLinks";
 import { MobileDrawer } from "./components/MobileDrawer";
 import { LanguageSwitcher } from "./components/LanguageSwitch";

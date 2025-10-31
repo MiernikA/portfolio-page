@@ -1,6 +1,6 @@
 import { Box, List, ListItem, ListItemButton, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { useActiveSection } from "../../../../context/ActiveSectionProvider";
+import { useActiveSection } from "../../../../context/ActiveSectionProvider/ActiveSectionProvider";
 import { useNavLinks } from "../hooks/useNavLinks";
 import { LanguageSwitcher } from "./LanguageSwitch";
 

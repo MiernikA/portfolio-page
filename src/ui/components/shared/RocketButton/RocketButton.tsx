@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { useActiveSection } from "../../../../context/ActiveSectionProvider";
+import { useActiveSection } from "../../../../context/ActiveSectionProvider/ActiveSectionProvider";
 import { useTranslation } from "react-i18next";
 import { RocketIcon } from "./RocketIcon";
 import { motion } from "framer-motion";
@@ -26,11 +26,11 @@ export const RocketButton = () => {
     const next = getNextSection();
     const section = document.querySelector(`#${next}`);
     if (section) {
-      document.body.classList.add("scrolling-with-rocket");
+      document.body.classList.add("scrolling-with-button");
       section.scrollIntoView({ behavior: "smooth" });
       setActiveSection(next);
       setTimeout(
-        () => document.body.classList.remove("scrolling-with-rocket"),
+        () => document.body.classList.remove("scrolling-with-button"),
         1000
       );
     }

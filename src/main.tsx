@@ -6,7 +6,7 @@ import App from "./App";
 import { theme } from "./config/styles/theme";
 import "./config/i18n";
 import "./config/styles/fonts/fonts.css";
-import { ActiveSectionProvider } from "./context/ActiveSectionProvider";
+import { ActiveSectionProvider } from "./context/ActiveSectionProvider/ActiveSectionProvider";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
