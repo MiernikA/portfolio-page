@@ -135,19 +135,6 @@
     },
     "items": [
       {
-        "name": "Snake Game",
-        "image": "img/projects/snake.gif",
-        "description": "Snake Game to w zasadzie moje pierwsze spotkanie z programowaniem, projekt z <orange>aplikacji klienckich</orange> w pierwszej klasie technikum. <br/>Opiera się na prostym <orange>interwale</orange> sterującym „ruchem” węża, losowo generowanej pozycji owocu i wykorzystuje nieskomplikowany <orange>mechanizmy kolizji</orange>. Muszę przyznać, że obecność projektu tutaj wynika głównie z sentymentu.",
-        "tags": [
-          { "name": "Szkoła średnia", "color": "#4db8ff" },
-          { "name": "JavaScript", "color": "#00ffcc" },
-          { "name": "Gra", "color": "#ff66cc" },
-          { "name": "Frontend", "color": "#ffc94d" }
-        ],
-        "demoLink": "https://miernika.github.io/Snake-Game/",
-        "codeLink": "https://github.com/MiernikA/Snake-Game"
-      },
-      {
         "name": "Weather App",
         "image": "img/projects/weather.gif",
         "description": "Weather App to aplikacja typu full-stack, która dostarcza <orange>prognozy pogody</orange> wraz z szacunkami produkcji energii z <orange>paneli fotowoltaicznych</orange> na nadchodzący tydzień, bazując na <orange>geolokalizacji</orange> użytkownika.<br/>Frontend został stworzony w React z użyciem <orange>Material-UI</orange> i komunikuje się z moim endpointem w Node.js. Aplikacja oferuje również <orange>tryb ciemny</orange>.",
@@ -174,6 +161,26 @@
         "codeLink": "https://github.com/MiernikA/Color-Lines"
       },
       {
+        "name": "Physics Simulation",
+        "image": "img/projects/physics.gif",
+        "description": "Ten projekt to zbiór interaktywnych <orange>symulacji fizycznych</orange> stworzonych przy użyciu <orange>pygame</orange>. Zawiera implementacje takich systemów jak <orange>model masowo-sprężynowy</orange>, <orange>symulacja materiału</orange> z wykorzystaniem <orange>integracji Verlet’a</orange> oraz <orange>mechanika kolizji</orange> dla ciał miękkich i sztywnych — wraz z wizualizacjami oraz szczegółowymi wzorami matematycznymi umieszczonymi w pliku README.",
+        "tags": [
+          {
+            "name": "Studia",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "Python",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Symulacja",
+            "color": "#ff66cc"
+          }
+        ],
+        "codeLink": "https://github.com/MiernikA/Programowanie-fizyki"
+      },
+      {
         "name": "Mp3 Player",
         "image": "img/projects/mp3.gif",
         "description": "Projekt pełniący rolę <orange>odtwarzacza muzyki</orange> z interfejsem i możliwością <orange>przesyłania</orange> własnych playlist.<br/>Większość logiki opiera się na backendzie w NodeJS, który odpowiada za <orange>odczyt albumów muzycznych</orange> z wewnętrznego folderu projektu oraz <orange>przechowywanie przesłanych przez użytkownika albumów</orange>. Po stronie frontendu zastosowano prosty <orange>CSS</orange> z dodatkowymi <orange>animacjami</orange>.",
@@ -182,7 +189,22 @@
           { "name": "Node", "color": "#00ffcc" },
           { "name": "Aplikacja", "color": "#ff66cc" },
           { "name": "Full-Stack", "color": "#ffc94d" }
-        ]
+        ],
+        "demoLink": "https://miernika.github.io/mp3-player-demo/",
+        "codeLink": "https://github.com/MiernikA/mp3-player"
+      },
+      {
+        "name": "Snake Game",
+        "image": "img/projects/snake.gif",
+        "description": "Snake Game to w zasadzie moje pierwsze spotkanie z programowaniem, projekt z <orange>aplikacji klienckich</orange> w pierwszej klasie technikum. <br/>Opiera się na prostym <orange>interwale</orange> sterującym „ruchem” węża, losowo generowanej pozycji owocu i wykorzystuje nieskomplikowany <orange>mechanizmy kolizji</orange>. Muszę przyznać, że obecność projektu tutaj wynika głównie z sentymentu.",
+        "tags": [
+          { "name": "Szkoła średnia", "color": "#4db8ff" },
+          { "name": "JavaScript", "color": "#00ffcc" },
+          { "name": "Gra", "color": "#ff66cc" },
+          { "name": "Frontend", "color": "#ffc94d" }
+        ],
+        "demoLink": "https://miernika.github.io/Snake-Game/",
+        "codeLink": "https://github.com/MiernikA/Snake-Game"
       }
     ]
   },
