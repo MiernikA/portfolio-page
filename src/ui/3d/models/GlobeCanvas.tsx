@@ -122,7 +122,7 @@ export const GlobeCanvas = () => {
     >
       <Canvas
         frameloop="always"
-        dpr={[1, 1.5]}
+        dpr={[1, 1]}
         gl={{ preserveDrawingBuffer: false }}
       >
         <Suspense fallback={<CanvasLoader />}>
