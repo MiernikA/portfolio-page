@@ -1,9 +1,10 @@
 import type { MouseEvent } from "react";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { useActiveSection } from "../../../../context/ActiveSectionProvider/ActiveSectionProvider";
+
 import { useTranslation } from "react-i18next";
 import { RocketIcon } from "./RocketIcon";
 import { motion } from "framer-motion";
+import {useActiveSection} from "../../../../context/ActiveSectionProvider/useActiveSection.ts";
 
 export const RocketButton = () => {
   const { activeSection, setActiveSection, sectionIds } = useActiveSection();

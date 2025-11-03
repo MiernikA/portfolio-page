@@ -11,10 +11,11 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useActiveSection } from "../../../context/ActiveSectionProvider/ActiveSectionProvider";
+
 import { useNavLinks } from "./hooks/useNavLinks";
 import { MobileDrawer } from "./components/MobileDrawer";
 import { LanguageSwitcher } from "./components/LanguageSwitch";
+import {useActiveSection} from "../../../context/ActiveSectionProvider/useActiveSection.ts";
 
 export const Navbar = () => {
   const { activeSection, setActiveSection } = useActiveSection();
