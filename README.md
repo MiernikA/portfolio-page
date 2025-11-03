@@ -8,6 +8,7 @@ Developed with TypeScript and Vite, focused on speed, clarity, and user-friendly
 ## 🚀 Demo
 
 🌐 Live Preview:  
+
 👉 https://portfolio-page-ochre-three.vercel.app
 
 ---
@@ -25,17 +26,18 @@ Developed with TypeScript and Vite, focused on speed, clarity, and user-friendly
 
 1. Clone the repository
 
-   git clone https://github.com/MiernikA/Portfolio-page.git
-   cd Portfolio-page
+    `git clone https://github.com/MiernikA/Portfolio-page.git`
+   
+    `cd Portfolio-page`
+
 
 2. Install dependencies
 
-   npm i
+   `npm i`
+
 
 3. Run the development server
 
-   npm run dev
+   `npm run dev`
 
-   The app should be available at:  
-   http://localhost:5173
 
