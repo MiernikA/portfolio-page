@@ -15,7 +15,7 @@ export const DownloadCVButton = () => {
   const handleClose = () => setAnchorEl(null);
 
   const handleDownload = (lang: "pl" | "eng") => {
-    const filePath = `/cv/cv_${lang}.pdf`;
+    const filePath = `/cv/miernik_cv_${lang}.pdf`;
     const link = document.createElement("a");
     link.href = filePath;
     link.download = `CV_Adrian_Miernik_${lang.toUpperCase()}.pdf`;
