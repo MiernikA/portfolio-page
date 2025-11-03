@@ -1,11 +1,12 @@
 import { Box, Container } from "@mui/material";
 import { SectionTitle } from "./SectionTitle";
+import type {ReactNode} from "react";
 
 type SectionLayoutProps = {
   id: string;
   title: string;
   subtitle: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const SectionLayout = ({
