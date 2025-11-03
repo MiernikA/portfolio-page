@@ -7,20 +7,25 @@ export function useScrollSections(
 ) {
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
-    const handleScroll = () => {
-      if (document.body.classList.contains("scrolling-with-rocket")) return;
+      const handleScroll = () => {
+          if (
+              document.body.classList.contains("scrolling-with-rocket") ||
+              document.body.classList.contains("scrolling-with-button")
+          )
+              return;
 
-      let current = "";
-      const midpoint = window.innerHeight / 2;
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= midpoint && rect.bottom >= midpoint) {
-          current = section.id;
-        }
-      });
-      if (!current && window.scrollY < 100) current = "home";
-      if (current && current !== activeSection) setActiveSection(current);
-    };
+          let current = "";
+          const midpoint = window.innerHeight / 2;
+          sections.forEach((section) => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top <= midpoint && rect.bottom >= midpoint) {
+                  current = section.id;
+              }
+          });
+          if (!current && window.scrollY < 100) current = "home";
+          if (current && current !== activeSection) setActiveSection(current);
+      };
+
 
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -29,7 +34,11 @@ export function useScrollSections(
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
-      if (document.body.classList.contains("scrolling-with-rocket")) return;
+        if (
+            document.body.classList.contains("scrolling-with-rocket") ||
+            document.body.classList.contains("scrolling-with-button")
+        )
+            return;
       if (sectionIds.length === 0) return;
 
       const currentIndex = sectionIds.indexOf(activeSection);
