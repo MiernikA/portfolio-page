@@ -1,4 +1,4 @@
-# 🌌 Portfolio Page
+# Portfolio Page
 
 A clean and responsive portfolio website built to present projects, skills, and experience.
 Developed with TypeScript and Vite, focused on speed, clarity, and user-friendly design.
