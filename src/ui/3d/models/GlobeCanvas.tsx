@@ -1,8 +1,8 @@
-import {Suspense, useEffect, useState, useRef, type MouseEvent} from "react";
-import {Canvas, useFrame, useThree} from "@react-three/fiber";
-import {Preload, useGLTF} from "@react-three/drei";
-import {Group, Vector2} from "three";
-import {CanvasLoader} from "../CanvasLoader.tsx";
+import { Suspense, useEffect, useState, useRef, type MouseEvent } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Preload, useGLTF } from "@react-three/drei";
+import { Group, Vector2 } from "three";
+import { CanvasLoader } from "../CanvasLoader.tsx";
 
 const ROTATION_SPEED = 0.005;
 const BASE_ROTATION_SPEED = 0.1;
@@ -10,7 +10,7 @@ const LIGHT_INTENSITY = 7000;
 const LIGHT_POSITION: [number, number, number] = [45, 120, 120];
 const LIGHT_ANGLE = 0.6;
 const LIGHT_PENUMBRA = 0.5;
-const MODEL_SCALE = {mobile: 0.5, desktop: 1};
+const MODEL_SCALE = { mobile: 0.5, desktop: 1 };
 const MODEL_POSITION: [number, number, number] = [30, 10, -15];
 const MODEL_ROTATION: [number, number, number] = [0, 1.5, 0.3];
 const HEMISPHERE_INTENSITY = 0.1;
@@ -22,7 +22,7 @@ type Props = {
     rotationDelta: Vector2;
 };
 
-const Globe = ({isMobile, rotationDelta}: Props) => {
+const Globe = ({ isMobile, rotationDelta }: Props) => {
     const model = useGLTF("./models/planet/scene_final.glb");
     const modelRef = useRef<Group>(null);
 
@@ -36,7 +36,7 @@ const Globe = ({isMobile, rotationDelta}: Props) => {
 
     return (
         <group>
-            <hemisphereLight intensity={HEMISPHERE_INTENSITY}/>
+            <hemisphereLight intensity={HEMISPHERE_INTENSITY} />
             <spotLight
                 intensity={LIGHT_INTENSITY}
                 position={LIGHT_POSITION}
@@ -56,7 +56,7 @@ const Globe = ({isMobile, rotationDelta}: Props) => {
 };
 
 const CameraSetup = () => {
-    const {camera} = useThree();
+    const { camera } = useThree();
 
     useEffect(() => {
         camera.position.set(...CAMERA_POSITION);
@@ -124,16 +124,19 @@ export const GlobeCanvas = () => {
                 gl={{
                     antialias: false,
                     powerPreference: "high-performance",
-                    precision: "mediump"
+                    precision: "mediump",
                 }}
-                dpr={2}
+                dpr={1}
             >
-                <Suspense fallback={<CanvasLoader/>}>
-                    <CameraSetup/>
-                    <Globe isMobile={isMobile} rotationDelta={rotationDelta}/>
+                <Suspense fallback={<CanvasLoader />}>
+                    <CameraSetup />
+                    <Globe isMobile={isMobile} rotationDelta={rotationDelta} />
                 </Suspense>
-                <Preload all/>
+                <Preload all />
             </Canvas>
         </div>
     );
 };
+
+// Preload model
+useGLTF.preload("./models/planet/scene_final.glb");
