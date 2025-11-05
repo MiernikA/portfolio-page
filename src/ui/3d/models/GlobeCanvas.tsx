@@ -23,7 +23,7 @@ type Props = {
 };
 
 const Globe = ({isMobile, rotationDelta}: Props) => {
-    const model = useGLTF("./models/planet/scene.glb");
+    const model = useGLTF("./models/planet/scene_lossless.glb");
     const modelRef = useRef<Group>(null);
 
     useFrame((_, delta) => {
@@ -126,7 +126,7 @@ export const GlobeCanvas = () => {
                     powerPreference: "high-performance",
                     precision: "mediump"
                 }}
-                dpr={0.75}
+                dpr={2}
             >
                 <Suspense fallback={<CanvasLoader/>}>
                     <CameraSetup/>
