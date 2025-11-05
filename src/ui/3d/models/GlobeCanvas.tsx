@@ -23,7 +23,7 @@ type Props = {
 };
 
 const Globe = ({ isMobile, rotationDelta }: Props) => {
-    const model = useGLTF("./models/planet/scene_final.glb");
+    const model = useGLTF("./models/planet/scene_optimized_soft.glb");
     const modelRef = useRef<Group>(null);
 
     useFrame((_, delta) => {
