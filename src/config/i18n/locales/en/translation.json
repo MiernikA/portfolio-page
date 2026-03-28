@@ -184,6 +184,26 @@
         "codeLink": "https://github.com/MiernikA/Color-Lines"
       },
       {
+        "name": "Bot Shooter",
+        "image": "img/projects/botshooter.gif",
+        "description": "An <orange>AI-driven</orange> arena shooter built with <orange>Pygame</orange>, where bots navigate, detect enemies, and engage in combat. The goal is to reach 5 kills as quickly as possible. \n\nBots compete in a closed arena, collecting resources and eliminating opponents. Their behavior is driven by a <orange>state machine</orange>, and the map is represented as a graph with <orange>A* pathfinding</orange> implementation.",
+        "tags": [
+          {
+            "name": "University-Project",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "Python",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "AI",
+            "color": "#ff66cc"
+          }
+        ],
+        "codeLink": "https://github.com/MiernikA/AI-Basics-UJ"
+      },
+      {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
         "description": "This project is a collection of interactive <orange>physics simulations</orange> created using <orange>pygame</orange>. It includes implementations of systems such as <orange>mass-spring models</orange>, <orange>cloth simulation</orange> with <orange>Verlet integration</orange>, and <orange>collision mechanics</orange> for soft and rigid bodies — accompanied by visual representations and detailed mathematical formulas included in the README.",

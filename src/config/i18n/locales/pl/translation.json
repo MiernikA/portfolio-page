@@ -161,6 +161,26 @@
         "codeLink": "https://github.com/MiernikA/Color-Lines"
       },
       {
+        "name": "Bot Shooter",
+        "image": "img/projects/botshooter.gif",
+        "description": "Strzelanka arenowa sterowana przez <orange>AI</orange>, zbudowana w <orange>Pygame</orange>, w której boty walczą ze sobą. Celem jest zdobycie 5 zabójstw jak najszybciej. \n\nBoty rywalizują na zamkniętej arenie, zbierając zasoby i eliminując przeciwników. Ich zachowanie oparte jest na <orange>state machine</orange>, a mapa reprezentowana jest jako graf z implementacją <orange>A* pathfinding</orange>.",
+        "tags": [
+          {
+            "name": "Studia",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "Python",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "AI",
+            "color": "#ff66cc"
+          }
+        ],
+        "codeLink": "https://github.com/MiernikA/AI-Basics-UJ"
+      },
+      {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
         "description": "Ten projekt to zbiór interaktywnych <orange>symulacji fizycznych</orange> stworzonych przy użyciu <orange>pygame</orange>. Zawiera implementacje takich systemów jak <orange>model masowo-sprężynowy</orange>, <orange>symulacja materiału</orange> z wykorzystaniem <orange>integracji Verlet’a</orange> oraz <orange>mechanika kolizji</orange> dla ciał miękkich i sztywnych — wraz z wizualizacjami oraz szczegółowymi wzorami matematycznymi umieszczonymi w pliku README.",
