@@ -98,7 +98,7 @@
       {
         "img": "img/experience/codibly-spyro.png",
         "title": "Junior Software Developer – Codibly",
-        "date": "Jun. 2024 – Present",
+        "date": "Jun. 2024 – Jan. 2026",
         "description": "As a member of the development team, I participated in the implementation of commercial projects in the field of e-mobility and renewable energy. My work involved designing and developing solutions for both client-side and server-side applications, as well as actively contributing to planning, requirements analysis, and process optimization within the team. I collaborated directly with clients, presenting project progress and proposing functional improvements, while also providing UX/UI design advice. Additionally, I supported the recruitment process of interns and continuously expanded my technical skills by learning new technologies.",
         "responsibilities": [
           "Designing and implementing frontend and backend functionalities",
@@ -122,6 +122,32 @@
           "Python",
           "Docker",
           "UX/UI"
+        ]
+      },
+      {
+        "img": "img/experience/solidstudio.png",
+        "title": "Node.js Developer – Solidstudio",
+        "date": "Jan. 2026 – Present",
+        "description": "As a member of the technical support team, I worked on maintaining and improving the company’s core product, which delivers e-mobility solutions to clients worldwide. I was responsible for direct communication with clients, verifying and resolving reported issues, and implementing new functionalities based on their requirements. Additionally, I contributed to the development of an AI-based tool aimed at automating the most time-consuming aspects of ticket evaluation and handling.",
+        "responsibilities": [
+          "Fixing bugs and implementing features based on client requests",
+          "Direct communication with clients and participation in requirement planning and analysis",
+          "Acting as a technical expert in the field of e-mobility protocols",
+          "Regular monitoring of infrastructure status and responding to accuring issues",
+          "Developing an AI-based tool aimed at optimizing the handling of client support tickets"
+        ],
+        "technologies": [
+          "NodeJs",
+          "NestJs",
+          "Java",
+          "Python",
+          "FastApi",
+          "AI Development",
+          "PostgreSQL",
+          "AWS",
+          "Git",
+          "Docker",
+          "Customer Support"
         ]
       }
     ]

@@ -124,6 +124,32 @@
           "Docker",
           "UX/UI"
         ]
+      },
+      {
+        "img": "img/experience/solidstudio.png",
+        "title": "Programista Node.js – Solidstudio",
+        "date": "Sty. 2026 – obecnie",
+        "description": "Jako członek zespołu wsparcia technicznego zajmowałem się utrzymaniem oraz rozwojem głównego produktu firmy, dostarczającego rozwiązania e-mobility dla klientów na całym świecie. Odpowiadałem za bezpośrednią komunikację z klientami, weryfikację i rozwiązywanie zgłaszanych problemów oraz implementację nowych funkcjonalności na podstawie ich wymagań. Dodatkowo współtworzyłem narzędzie oparte na AI, mające na celu automatyzację najbardziej czasochłonnych procesów związanych z obsługą i analizą zgłoszeń.",
+        "responsibilities": [
+          "Naprawa błędów oraz implementacja nowych funkcjonalności na podstawie zgłoszeń klientów",
+          "Bezpośredni kontakt z klientami oraz udział w analizie i planowaniu wymagań",
+          "Pełnienie roli eksperta technicznego w zakresie protokołów e-mobility",
+          "Regularne monitorowanie stanu infrastruktury i reagowanie na pojawiające się problemy",
+          "Rozwój narzędzia opartego na AI do optymalizacji obsługi zgłoszeń klientów"
+        ],
+        "technologies": [
+          "NodeJs",
+          "NestJs",
+          "Java",
+          "Python",
+          "FastApi",
+          "AI Development",
+          "PostgreSQL",
+          "AWS",
+          "Git",
+          "Docker",
+          "Customer Support"
+        ]
       }
     ]
   },

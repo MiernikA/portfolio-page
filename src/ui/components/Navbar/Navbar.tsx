@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 import { useNavLinks } from "./hooks/useNavLinks";
 import { MobileDrawer } from "./components/MobileDrawer";
 import { LanguageSwitcher } from "./components/LanguageSwitch";
-import {useActiveSection} from "../../../context/ActiveSectionProvider/useActiveSection.ts";
+import { useActiveSection } from "../../../context/ActiveSectionProvider/useActiveSection.ts";
 
 export const Navbar = () => {
   const { activeSection, setActiveSection } = useActiveSection();
@@ -74,7 +74,9 @@ export const Navbar = () => {
             />
             <Typography variant="h6" sx={{ fontWeight: 700, fontSize: 20 }}>
               Adrian Miernik{" "}
-              <span style={{ color: "#808080" }}>| Portfolio</span>
+              <span style={{ color: "#808080" }}>
+                | Portfolio
+              </span>
             </Typography>
           </Link>
 
