@@ -2,7 +2,8 @@ import { Suspense, useEffect, useState, useRef, type MouseEvent } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Preload, useGLTF } from "@react-three/drei";
 import { Group, Vector2 } from "three";
-import { CanvasLoader } from "../CanvasLoader.tsx";
+import { planetSceneUrl } from "@assets/index";
+import { CanvasLoader } from "../CanvasLoader";
 
 const ROTATION_SPEED = 0.005;
 const BASE_ROTATION_SPEED = 0.1;
@@ -23,7 +24,7 @@ type Props = {
 };
 
 const Globe = ({ isMobile, rotationDelta }: Props) => {
-    const model = useGLTF("./models/planet/scene_optimized.glb");
+    const model = useGLTF(planetSceneUrl);
     const modelRef = useRef<Group>(null);
 
     useFrame((_, delta) => {
@@ -138,4 +139,4 @@ export const GlobeCanvas = () => {
     );
 };
 
-useGLTF.preload("./models/planet/scene_optimized.glb");
+useGLTF.preload(planetSceneUrl);

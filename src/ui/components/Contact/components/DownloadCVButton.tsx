@@ -1,10 +1,11 @@
-import {Button, Menu, MenuItem} from "@mui/material";
-import {useState} from "react";
-import {useTranslation} from "react-i18next";
+import { Button, Menu, MenuItem } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { cvFiles } from "@assets/index";
 
 export const DownloadCVButton = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
 
@@ -15,7 +16,7 @@ export const DownloadCVButton = () => {
     const handleClose = () => setAnchorEl(null);
 
     const handleDownload = (lang: "pl" | "eng") => {
-        const filePath = `/cv/miernik_cv_${lang}.pdf`;
+        const filePath = cvFiles[lang];
         const link = document.createElement("a");
         link.href = filePath;
         link.download = `CV_Adrian_Miernik_${lang.toUpperCase()}.pdf`;
@@ -29,7 +30,7 @@ export const DownloadCVButton = () => {
         <>
             <Button
                 variant="outlined"
-                startIcon={<DownloadIcon/>}
+                startIcon={<DownloadIcon />}
                 onClick={handleClick}
                 sx={{
                     color: "primary.main",
@@ -59,7 +60,8 @@ export const DownloadCVButton = () => {
                     paper: {
                         sx: {
                             backgroundColor: "rgba(20,20,20,0.95)",
-                            border: (t) => `1px solid ${t.palette.primary.main}60`,
+                            border: (theme) =>
+                                `1px solid ${theme.palette.primary.main}60`,
                             color: "white",
                             borderRadius: 2,
                         },

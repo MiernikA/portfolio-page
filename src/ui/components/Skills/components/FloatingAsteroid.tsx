@@ -2,6 +2,7 @@ import { Decal, Html, useTexture } from "@react-three/drei";
 import { useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import * as THREE from "three";
 import { useMemo, useRef, useState, type RefObject, useEffect } from "react";
+import { rockTextureUrls } from "@assets/index";
 import { createAsteroid } from "../utils/createAsteriod";
 import { handleCollisionsAndBounds } from "../utils/physicsUtils";
 
@@ -32,12 +33,7 @@ export const FloatingAsteroid = ({
   const meshRef = useRef<THREE.Mesh>(null);
   const { camera } = useThree();
   const [decal] = useTexture([imgUrl]);
-  const [colorMap, normalMap, roughnessMap, aoMap] = useTexture([
-    "/models/rock_texture/Rock058_1K-JPG_Color.jpg",
-    "/models/rock_texture/Rock058_1K-JPG_NormalGL.jpg",
-    "/models/rock_texture/Rock058_1K-JPG_Roughness.jpg",
-    "/models/rock_texture/Rock058_1K-JPG_AmbientOcclusion.jpg",
-  ]);
+  const [colorMap, normalMap, roughnessMap, aoMap] = useTexture(rockTextureUrls);
 
   const geometry = useMemo(() => createAsteroid(1.2, 64), []);
   const position = useRef(startPos.clone());

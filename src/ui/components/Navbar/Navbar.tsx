@@ -11,11 +11,12 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { logoUrl } from "@assets/index";
 
 import { useNavLinks } from "./hooks/useNavLinks";
 import { MobileDrawer } from "./components/MobileDrawer";
 import { LanguageSwitcher } from "./components/LanguageSwitch";
-import { useActiveSection } from "../../../context/ActiveSectionProvider/useActiveSection.ts";
+import { useActiveSection } from "../../../context/ActiveSectionProvider/useActiveSection";
 
 export const Navbar = () => {
   const { activeSection, setActiveSection } = useActiveSection();
@@ -68,7 +69,7 @@ export const Navbar = () => {
             onClick={() => handleScroll("home")}
           >
             <img
-              src="/img/logo.svg"
+              src={logoUrl}
               alt="logo"
               style={{ width: 28, height: 28, marginRight: 10 }}
             />
