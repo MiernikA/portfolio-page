@@ -207,6 +207,26 @@
         "codeLink": "https://github.com/MiernikA/AI-Basics-UJ"
       },
       {
+        "name": "Bestie i Kłusownicy",
+        "image": "img/projects/bestie.gif",
+        "description": "Turowa <orange>wieloosobowa gra planszowa</orange> wspierana przez aplikację webową, w której gracze wcielają się w łowców tropiących tajemnicze bestie na dynamicznej mapie.<br/><br/>Projekt łączy <orange>frontend w Vue</orange> z <orange>backendem w FastAPI</orange>, obsługując stan gry w czasie rzeczywistym przy użyciu <orange>WebSocketów</orange>. Główne mechaniki obejmują <orange>zachowania AI oparte na stanach</orange> dla bestii, zarządzanie turami oraz interaktywną rozgrywkę.",
+        "tags": [
+          { "name": "Vue.js", "color": "#00ffcc" },
+          {
+            "name": "FastApi",
+            "color": "#00ffcc"
+          },
+          { "name": "Full-Stack", "color": "#ffc94d" },
+          { "name": "Gra", "color": "#ff66cc" },
+          {
+            "name": "AI",
+            "color": "#ff66cc"
+          }
+        ],
+        "demoLink": "https://bestie-klusownicy.vercel.app/",
+        "codeLink": "https://github.com/MiernikA/Bestie-Klusownicy"
+      },
+      {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
         "description": "Ten projekt to zbiór interaktywnych <orange>symulacji fizycznych</orange> stworzonych przy użyciu <orange>pygame</orange>. Zawiera implementacje takich systemów jak <orange>model masowo-sprężynowy</orange>, <orange>symulacja materiału</orange> z wykorzystaniem <orange>integracji Verlet’a</orange> oraz <orange>mechanika kolizji</orange> dla ciał miękkich i sztywnych — wraz z wizualizacjami oraz szczegółowymi wzorami matematycznymi umieszczonymi w pliku README.",

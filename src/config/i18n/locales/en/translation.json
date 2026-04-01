@@ -230,6 +230,25 @@
         "codeLink": "https://github.com/MiernikA/AI-Basics-UJ"
       },
       {
+        "name": "Hunters and Beasts",
+        "image": "img/projects/bestie.gif",
+        "description": "A turn-based <orange>multiplayer board game</orange> supported by a web application, where players take on the role of hunters tracking mysterious beasts across a dynamic map.<br/><br/>The project combines a <orange>Vue frontend</orange> with a <orange>FastAPI backend</orange>, handling real-time game state via <orange>WebSockets</orange>. Core mechanics include <orange>state-driven AI behaviors</orange> for beasts, turn management, and interactive map-based gameplay.",
+        "tags": [
+          { "name": "Vue.js", "color": "#00ffcc" },
+          {
+            "name": "FastApi",
+            "color": "#00ffcc"
+          },
+          { "name": "Full-Stack", "color": "#ffc94d" },
+          {
+            "name": "AI",
+            "color": "#ff66cc"
+          }
+        ],
+        "demoLink": "https://bestie-klusownicy.vercel.app/",
+        "codeLink": "https://github.com/MiernikA/Bestie-Klusownicy"
+      },
+      {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
         "description": "This project is a collection of interactive <orange>physics simulations</orange> created using <orange>pygame</orange>. It includes implementations of systems such as <orange>mass-spring models</orange>, <orange>cloth simulation</orange> with <orange>Verlet integration</orange>, and <orange>collision mechanics</orange> for soft and rigid bodies — accompanied by visual representations and detailed mathematical formulas included in the README.",

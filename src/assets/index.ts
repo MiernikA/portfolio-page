@@ -13,6 +13,7 @@ import experienceSolidstudioLogo from "./img/experience/solidstudio.png";
 import englishFlagUrl from "./img/lang/eng_lang.svg";
 import polishFlagUrl from "./img/lang/pl_lang.svg";
 import projectBallsPreview from "./img/projects/balls.gif";
+import projectBestiePreview from "./img/projects/bestie.gif";
 import projectBotshooterPreview from "./img/projects/botshooter.gif";
 import projectMp3Preview from "./img/projects/mp3.gif";
 import projectPhysicsPreview from "./img/projects/physics.gif";
@@ -79,6 +80,7 @@ export const languageFlags = {
 
 export const projectPreviews = {
   balls: projectBallsPreview,
+  bestie: projectBestiePreview,
   botshooter: projectBotshooterPreview,
   mp3: projectMp3Preview,
   physics: projectPhysicsPreview,
