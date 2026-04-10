@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import {useNavLinks} from "../hooks/useNavLinks";
 import {LanguageSwitcher} from "./LanguageSwitch";
 import {useActiveSection} from "../../../../context/ActiveSectionProvider/useActiveSection.ts";
+import { responsiveTextColor } from "../../../../config/styles/theme";
 
 type Props = {
     onClose: () => void;
@@ -26,7 +27,7 @@ export const MobileDrawer = ({onClose, handleScroll}: Props) => {
                             }}
                             sx={{
                                 textAlign: "center",
-                                color: activeSection === link.id ? "#fff" : "#808080",
+                                color: activeSection === link.id ? responsiveTextColor : "#808080",
                             }}
                         >
                             <Typography

@@ -11,7 +11,9 @@ import {
   useTheme,
 } from "@mui/material";
 import { Close } from "@mui/icons-material";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { responsiveTextColor } from "../../../../config/styles/theme";
 
 type Experience = {
   title: string;
@@ -31,6 +33,25 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  useEffect(() => {
+    if (!open) return;
+
+    const previousOverflow = document.body.style.overflow;
+    const previousPaddingRight = document.body.style.paddingRight;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    document.body.style.overflow = "hidden";
+
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.body.style.paddingRight = previousPaddingRight;
+    };
+  }, [open]);
 
   return (
     <Modal
@@ -53,7 +74,7 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
             maxHeight: isMobile ? "100vh" : "88vh",
             overflowY: "auto",
             outline: "none",
-            color: "#fff",
+            color: responsiveTextColor,
           }}
         >
           <IconButton
@@ -127,7 +148,7 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
                     label={tech}
                     sx={{
                       bgcolor: "#121212",
-                      color: "#fff",
+                      color: responsiveTextColor,
                       letterSpacing: 1,
                       border: (theme) =>
                         `1px solid ${theme.palette.primary.main}`,

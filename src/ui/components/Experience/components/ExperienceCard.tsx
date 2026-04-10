@@ -12,6 +12,8 @@ type Props = {
   showIcons: boolean;
   onClick: () => void;
   isMobile: boolean;
+  isMediumScreen: boolean;
+  isLargeScreen: boolean;
 };
 
 export const ExperienceCard = ({
@@ -22,10 +24,17 @@ export const ExperienceCard = ({
   showIcons,
   onClick,
   isMobile,
+  isMediumScreen,
+  isLargeScreen,
 }: Props) => {
   const isTop = index % 2 === 0;
   const { t } = useTranslation();
   const desktopLeft = `calc(${timelineInset} + ${(index / (total - 1)) * 100}% * ((100% - (${timelineInset} * 2)) / 100%))`;
+  const desktopTop = isMediumScreen
+    ? "calc(50% - 170px)"
+    : isTop
+      ? "calc(50% - 170px)"
+      : "calc(50% + 50px)";
 
   return (
     <Box
@@ -37,11 +46,7 @@ export const ExperienceCard = ({
         alignItems: "center",
         flexDirection: "column",
         left: isMobile ? "auto" : desktopLeft,
-        top: isMobile
-          ? "auto"
-          : isTop
-            ? "calc(50% - 140px)"
-            : "calc(50% + 40px)",
+        top: isMobile ? "auto" : desktopTop,
         transform: isMobile ? "none" : "translateX(-50%)",
         cursor: "pointer",
         opacity: showIcons ? 1 : 0,
@@ -57,8 +62,20 @@ export const ExperienceCard = ({
         alt={exp.title}
         sx={{
           background: "#fff",
-          width: "clamp(160px, 16vw, 220px)",
-          height: "clamp(64px, 6vw, 80px)",
+          width: isMobile
+            ? "clamp(160px, 60vw, 220px)"
+            : isLargeScreen
+              ? "clamp(180px, 15vw, 250px)"
+              : isMediumScreen
+                ? "clamp(168px, 14vw, 220px)"
+                : "clamp(160px, 16vw, 220px)",
+          height: isMobile
+            ? "clamp(64px, 24vw, 80px)"
+            : isLargeScreen
+              ? "clamp(72px, 5.8vw, 92px)"
+              : isMediumScreen
+                ? "clamp(68px, 5.4vw, 82px)"
+                : "clamp(64px, 6vw, 80px)",
           borderRadius: 5,
           objectFit: "contain",
           border: (theme) => `2px solid ${theme.palette.primary.main}`,

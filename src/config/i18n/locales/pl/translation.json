@@ -277,8 +277,8 @@
   "contact": {
     "subtitle": "Skontaktuj się ze mną",
     "downloadCV": "Pobierz CV",
-    "cvPolish": "CV (Polski)",
-    "cvEnglish": "CV (Angielski)",
+    "cvAts": "CV (ATS-friendly)",
+    "cvClassic": "CV (Klasyczne)",
     "details": "Dane kontaktowe",
     "form": {
       "nameLabel": "Twoje imię:",

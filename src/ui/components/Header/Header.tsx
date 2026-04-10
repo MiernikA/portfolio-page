@@ -2,6 +2,7 @@ import { Box, Typography, Container, Stack } from "@mui/material";
 import { GlobeCanvas } from "../../3d/models/GlobeCanvas";
 import { useTranslation } from "react-i18next";
 import { VerticalDivider } from "./components/VericalDivider";
+import { responsiveTextColor } from "../../../config/styles/theme";
 
 export const Header = () => {
   const { t } = useTranslation();
@@ -40,7 +41,7 @@ export const Header = () => {
           <Typography
             variant="h1"
             sx={{
-              color: "#fff",
+              color: responsiveTextColor,
               fontWeight: 800,
               mb: 3,
               fontSize: { xs: "2.8rem", sm: "3.4rem", lg: "4.2rem" },

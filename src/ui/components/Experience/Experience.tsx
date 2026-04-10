@@ -16,6 +16,8 @@ export const Experience = () => {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("xl"));
+  const isMediumScreen = !isMobile && !isLargeScreen;
   const timelineInset = "12%";
 
   useEffect(() => {
@@ -41,10 +43,15 @@ export const Experience = () => {
       subtitle={t("experience.subtitle")}
       title={t("navbar.experience")}
     >
-      <Box ref={sectionRef}>
+      <Box
+        ref={sectionRef}
+        sx={{
+          mt: 0,
+        }}
+      >
         <Box
           sx={{
-            minHeight: isMobile ? "auto" : 600,
+            minHeight: isMobile ? "auto" : isLargeScreen ? 660 : 640,
             display: "flex",
             flexDirection: isMobile ? "column" : "column",
             justifyContent: isMobile ? "flex-start" : "center",
@@ -56,7 +63,7 @@ export const Experience = () => {
           <Box
             sx={{
               width: isMobile ? "100%" : `calc(100% - (${timelineInset} * 2))`,
-              height: 5,
+              height: isLargeScreen ? 8 : 6,
               background: (theme) =>
                 `linear-gradient(90deg, ${theme.palette.primary.main} 0%, #ffb347 100%)`,
               borderRadius: 2,
@@ -77,8 +84,8 @@ export const Experience = () => {
                     top: "50%",
                     left: `${(i / (experiences.length - 1)) * 100}%`,
                     transform: "translate(-50%, -50%)",
-                    width: 20,
-                    height: 20,
+                    width: isLargeScreen ? 24 : 20,
+                    height: isLargeScreen ? 24 : 20,
                     borderRadius: "50%",
                     background: (theme) =>
                       `linear-gradient(90deg, ${theme.palette.primary.main}, #ffb347)`,
@@ -100,6 +107,8 @@ export const Experience = () => {
               showIcons={showIcons || isMobile}
               onClick={() => setOpenIndex(i)}
               isMobile={isMobile}
+              isMediumScreen={isMediumScreen}
+              isLargeScreen={isLargeScreen}
             />
           ))}
         </Box>

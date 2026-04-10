@@ -1,11 +1,17 @@
 import { Typography, Box } from "@mui/material";
+import type { ReactNode } from "react";
 
 type SectionTitleProps = {
   subtitle: string;
   title: string;
+  titleAside?: ReactNode;
 };
 
-export const SectionTitle = ({ subtitle, title }: SectionTitleProps) => (
+export const SectionTitle = ({
+  subtitle,
+  title,
+  titleAside,
+}: SectionTitleProps) => (
   <Box>
     <Typography
       sx={{
@@ -19,16 +25,28 @@ export const SectionTitle = ({ subtitle, title }: SectionTitleProps) => (
       {subtitle}
     </Typography>
 
-    <Typography
-      variant="h2"
+    <Box
       sx={{
-        fontWeight: 800,
         mb: 2,
-        letterSpacing: 0.5,
-        fontSize: { xs: "2.2rem", sm: undefined },
+        display: "flex",
+        alignItems: { xs: "flex-end", md: "center" },
+        justifyContent: "space-between",
+        gap: 2,
+        flexWrap: "wrap",
       }}
     >
-      {title}
-    </Typography>
+      <Typography
+        variant="h2"
+        sx={{
+          fontWeight: 800,
+          letterSpacing: 0.5,
+          fontSize: { xs: "2.2rem", sm: undefined },
+        }}
+      >
+        {title}
+      </Typography>
+
+      {titleAside}
+    </Box>
   </Box>
 );

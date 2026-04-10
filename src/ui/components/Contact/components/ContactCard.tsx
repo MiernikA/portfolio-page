@@ -12,6 +12,7 @@ import type { ChangeEvent, FormEvent, RefObject } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import SendIcon from "@mui/icons-material/Send";
+import { responsiveTextColor } from "../../../../config/styles/theme";
 
 type FormData = {
   name: string;
@@ -39,6 +40,7 @@ export const ContactCard = ({
   const { t } = useTranslation();
   const theme = useTheme();
   const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("xl"));
 
   return (
     <motion.form
@@ -47,7 +49,7 @@ export const ContactCard = ({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      style={{ width: isCompact ? "100%" : "65%" }}
+      style={{ width: "100%" }}
     >
       <Card
         sx={{
@@ -55,7 +57,7 @@ export const ContactCard = ({
           border: (t) => `2px solid ${t.palette.primary.main}60`,
           boxShadow: (t) => `0 0 25px ${t.palette.primary.main}25`,
           borderRadius: 3,
-          height: isCompact ? "auto" : 600,
+          height: isCompact ? "auto" : isLargeScreen ? 520 : 600,
           display: "flex",
           width: "100%",
           transition: "box-shadow 0.3s ease",
@@ -71,11 +73,11 @@ export const ContactCard = ({
             justifyContent: "flex-start",
             alignItems: "flex-start",
             width: "100%",
-            px: { xs: 1, sm: 2 },
-            py: { xs: 1, sm: 2 },
+            px: { xs: 1, sm: 2, xl: 2.5 },
+            py: { xs: 1, sm: 2, xl: 1.5 },
           }}
         >
-          <Typography sx={{ color: "#fff", mb: 0.5, fontWeight: 600 }}>
+          <Typography sx={{ color: responsiveTextColor, mb: 0.5, fontWeight: 600 }}>
             {t("contact.form.nameLabel")}
           </Typography>
           <TextField
@@ -87,11 +89,11 @@ export const ContactCard = ({
             margin="dense"
             InputLabelProps={{ style: { color: "#ccc" } }}
             InputProps={{
-              style: { color: "white", borderRadius: "8px" },
+              style: { color: "inherit", borderRadius: "8px" },
             }}
           />
 
-          <Typography sx={{ color: "#fff", mt: 2, mb: 0.5, fontWeight: 600 }}>
+          <Typography sx={{ color: responsiveTextColor, mt: 2, mb: 0.5, fontWeight: 600 }}>
             {t("contact.form.emailLabel")}
           </Typography>
           <TextField
@@ -103,17 +105,17 @@ export const ContactCard = ({
             margin="dense"
             InputLabelProps={{ style: { color: "#ccc" } }}
             InputProps={{
-              style: { color: "white", borderRadius: "8px" },
+              style: { color: "inherit", borderRadius: "8px" },
             }}
           />
 
-          <Typography sx={{ color: "#fff", mt: 2, mb: 0.5, fontWeight: 600 }}>
+          <Typography sx={{ color: responsiveTextColor, mt: 2, mb: 0.5, fontWeight: 600 }}>
             {t("contact.form.messageLabel")}
           </Typography>
           <TextField
             fullWidth
             multiline
-            rows={6}
+            rows={isLargeScreen ? 5 : 6}
             placeholder={t("contact.form.messagePlaceholder")}
             name="message"
             value={form.message}
@@ -121,7 +123,7 @@ export const ContactCard = ({
             margin="dense"
           />
 
-          <Box sx={{ mt: 3, width: "100%", textAlign: "center" }}>
+          <Box sx={{ mt: { xs: 3, xl: 2 }, width: "100%", textAlign: "center" }}>
             <Button
               type="submit"
               variant="outlined"

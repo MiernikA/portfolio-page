@@ -1,6 +1,7 @@
 import { useTheme } from "@mui/material/styles";
 import { Html, useProgress } from "@react-three/drei";
 import { Box, CircularProgress, Typography } from "@mui/material";
+import { responsiveTextColor } from "../../config/styles/theme";
 
 export const CanvasLoader = () => {
   const { progress } = useProgress();
@@ -21,7 +22,7 @@ export const CanvasLoader = () => {
         />
         <Typography
           variant="body2"
-          sx={{ mt: 3, color: "#fff", fontWeight: 800 }}
+          sx={{ mt: 3, color: responsiveTextColor, fontWeight: 800 }}
         >
           {progress.toFixed(2)}%
         </Typography>

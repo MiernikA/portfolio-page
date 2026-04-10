@@ -29,7 +29,9 @@ export const Contact = () => {
 
   const { t } = useTranslation();
   const theme = useTheme();
-  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
+  const isContactDetailsOnly = useMediaQuery(
+    theme.breakpoints.down("xl"),
+  );
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -92,31 +94,49 @@ export const Contact = () => {
       title={t("navbar.contact")}
     >
       <Stack
-        direction={isCompact ? "column" : "row"}
-        spacing={6}
+        direction="row"
+        spacing={{ xs: 4, lg: 3, xl: 0 }}
         alignItems="stretch"
         sx={{
-          mt: 2,
+          mt: { xs: 2, md: 1, xl: 1 },
           width: "100%",
-          "& > *": {
-            width: isCompact ? "100%" : "auto",
+          justifyContent: "center",
+          columnGap: { xl: 6 },
+          "& > *:first-of-type": {
+            width: "100%",
+            maxWidth: { xs: "100%", md: 820, lg: 860, xl: "none" },
+            flex: { xl: "1 1 0" },
+            mx: 0,
+          },
+          "& > *:last-child": {
+            width: "100%",
+            maxWidth: {
+              xs: "100%",
+              md: isContactDetailsOnly ? 720 : 820,
+              lg: isContactDetailsOnly ? 760 : 860,
+              xl: "none",
+            },
+            flex: { xl: "0 0 360px" },
+            mx: 0,
           },
         }}
       >
-        <ContactCard
-          form={form}
-          loading={loading}
-          formRef={formRef}
-          handleChange={handleChange}
-          handleSubmit={handleSubmit}
-        />
+        {!isContactDetailsOnly && (
+          <ContactCard
+            form={form}
+            loading={loading}
+            formRef={formRef}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          />
+        )}
 
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{
-            width: isCompact ? "100%" : "30%",
+            width: "100%",
             position: "relative",
             height: "100%",
           }}

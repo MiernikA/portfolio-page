@@ -1,4 +1,4 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 type Props = {
   title: string;
@@ -7,6 +7,7 @@ type Props = {
 
 export const TiltCardContent = ({ title, icon }: Props) => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -72,16 +73,18 @@ export const TiltCardContent = ({ title, icon }: Props) => {
         {title}
       </Typography>
 
-      <Typography
-        sx={{
-          color: theme.palette.primary.main,
-          fontSize: "1.5rem",
-          textShadow: `0 0 6px ${theme.palette.primary.main}`,
-          mb: 1,
-        }}
-      >
-        ✦
-      </Typography>
+      {!isMobile && (
+        <Typography
+          sx={{
+            color: theme.palette.primary.main,
+            fontSize: "1.5rem",
+            textShadow: `0 0 6px ${theme.palette.primary.main}`,
+            mb: 1,
+          }}
+        >
+          *
+        </Typography>
+      )}
     </Box>
   );
 };

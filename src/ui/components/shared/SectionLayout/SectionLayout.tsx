@@ -1,12 +1,14 @@
 import { Box, Container } from "@mui/material";
 import { SectionTitle } from "./SectionTitle";
 import type {ReactNode} from "react";
+import { responsiveTextColor } from "../../../../config/styles/theme";
 
 type SectionLayoutProps = {
   id: string;
   title: string;
   subtitle: string;
   children: ReactNode;
+  titleAside?: ReactNode;
 };
 
 export const SectionLayout = ({
@@ -14,13 +16,14 @@ export const SectionLayout = ({
   title,
   subtitle,
   children,
+  titleAside,
 }: SectionLayoutProps) => {
   return (
     <Box
       component="section"
       id={id}
       sx={{
-        color: "#fff",
+        color: responsiveTextColor,
         scrollMarginTop: { xs: "72px", sm: 0 },
       }}
     >
@@ -36,7 +39,7 @@ export const SectionLayout = ({
           pt: { xs: 10, md: 12, xl: 0 },
         }}
       >
-        <SectionTitle subtitle={subtitle} title={title} />
+        <SectionTitle subtitle={subtitle} title={title} titleAside={titleAside} />
         {children}
       </Container>
     </Box>

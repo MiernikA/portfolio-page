@@ -41,11 +41,10 @@ export const AboutMe = () => {
 
       <Box
         sx={{
-          display: "flex",
+          display: { xs: "flex", md: "none", xl: "flex" },
           flexWrap: "wrap",
           justifyContent: "center",
           gap: { xs: 2, md: 3 },
-
           mt: 2,
         }}
       >

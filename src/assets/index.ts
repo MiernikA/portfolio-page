@@ -43,8 +43,8 @@ import skillThreejsIcon from "./img/skills/threejs.png";
 import skillTypescriptIcon from "./img/skills/typescript.png";
 import skillViteIcon from "./img/skills/vite.png";
 import skillVueJsIcon from "./img/skills/vuejs.png";
-import cvEnglishUrl from "./cv/miernik_cv_eng.pdf";
-import cvPolishUrl from "./cv/miernik_cv_pl.pdf";
+import cvAtsUrl from "./cv/Adrian Miernik-Software Engineer-ats.pdf";
+import cvClassicUrl from "./cv/Adrian Miernik-Software Engineer.pdf";
 import planetSceneUrl from "./models/planet/scene_optimized.glb?url";
 import rockAoMapUrl from "./models/rock_texture/Rock058_1K-JPG_AmbientOcclusion.jpg";
 import rockColorMapUrl from "./models/rock_texture/Rock058_1K-JPG_Color.jpg";
@@ -61,8 +61,8 @@ export const aboutIcons = {
 } as const;
 
 export const cvFiles = {
-  eng: cvEnglishUrl,
-  pl: cvPolishUrl,
+  ats: cvAtsUrl,
+  classic: cvClassicUrl,
 } as const;
 
 export const experienceLogos = {

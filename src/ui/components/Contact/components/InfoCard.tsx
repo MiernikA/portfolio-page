@@ -16,13 +16,17 @@ export const InfoCard = () => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("xl"));
+  const isMediumScreen = useMediaQuery(
+    theme.breakpoints.between("sm", "xl"),
+  );
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      style={{ width: isCompact ? "100%" : "30rem" }}
+      style={{ width: "100%" }}
     >
       <Card
         sx={{
@@ -30,7 +34,7 @@ export const InfoCard = () => {
           border: (t) => `2px solid ${t.palette.primary.main}60`,
           boxShadow: (t) => `0 0 25px ${t.palette.primary.main}25`,
           borderRadius: 3,
-          height: isCompact ? "auto" : 600,
+          height: isMediumScreen ? "auto" : isCompact ? "auto" : isLargeScreen ? 520 : 600,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -48,8 +52,10 @@ export const InfoCard = () => {
             flexGrow: 1,
             display: "flex",
             flexDirection: "column",
-            mt: { xs: 2, md: 4, xl: 5 },
-            gap: { xs: 3, md: 4 },
+            mt: { xs: 2, md: isMediumScreen ? 2 : 4, xl: 3 },
+            gap: { xs: 3, md: isMediumScreen ? 2.5 : 4, xl: 3 },
+            px: { xs: 2, md: isMediumScreen ? 2.5 : 2, xl: 2 },
+            py: { xs: 1, md: isMediumScreen ? 1.5 : 2, xl: 2 },
           }}
         >
           <Typography
@@ -59,22 +65,23 @@ export const InfoCard = () => {
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: 2,
+              fontSize: { xs: "2rem", md: isMediumScreen ? "2.2rem" : "2.6rem", xl: "2.125rem" },
             }}
           >
             {t("contact.details")}
           </Typography>
 
-          <Stack spacing={4} alignItems="center">
+          <Stack spacing={{ xs: 4, md: isMediumScreen ? 2.5 : 4, xl: 3 }} alignItems="center">
             <Stack direction="row" spacing={2} alignItems="center">
               <Phone color="primary" />
-              <Typography sx={{ fontSize: { xs: "1rem", md: "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
+              <Typography sx={{ fontSize: { xs: "1rem", md: isMediumScreen ? "1.05rem" : "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
                 +48 536 086 931
               </Typography>
             </Stack>
 
             <Stack direction="row" spacing={2} alignItems="center">
               <Email color="primary" />
-              <Typography sx={{ fontSize: { xs: "1rem", md: "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
+              <Typography sx={{ fontSize: { xs: "1rem", md: isMediumScreen ? "1.05rem" : "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
                 adrianmiernik@gmail.com
               </Typography>
             </Stack>
@@ -93,14 +100,14 @@ export const InfoCard = () => {
               }
             >
               <GitHub color="primary" />
-              <Typography sx={{ fontSize: { xs: "1rem", md: "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
+              <Typography sx={{ fontSize: { xs: "1rem", md: isMediumScreen ? "1.05rem" : "1.15rem", xl: "1.25rem" }, fontWeight: 500 }}>
                 github.com/MiernikA
               </Typography>
             </Stack>
           </Stack>
         </CardContent>
 
-        <Box sx={{ pb: 4 }}>
+        <Box sx={{ pb: { xs: 4, md: isMediumScreen ? 2.5 : 4, xl: 3 } }}>
           <DownloadCVButton />
         </Box>
       </Card>

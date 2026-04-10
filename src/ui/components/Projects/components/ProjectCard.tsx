@@ -5,6 +5,10 @@ import { ProjectButtons } from "./subcomponents/ProjectButtons";
 import { GithubCard } from "./subcomponents/GithubCard";
 import type { Project } from "../utils/types";
 import { Trans } from "react-i18next";
+import {
+  responsiveMutedTextColor,
+  responsiveTextColor,
+} from "../../../../config/styles/theme";
 
 type Props = {
   project: Project;
@@ -17,7 +21,8 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("xl"));
+  const isMediumScreen = !isMobile && !isLargeScreen;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,7 +55,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
       <Box
         sx={{
           width: "100%",
-          height: isMobile ? "auto" : isCompact ? 560 : 600,
+          height: isMobile ? "auto" : isMediumScreen ? 450 : 600,
           display: "flex",
           flexDirection: "column",
           borderRadius: 2,
@@ -67,7 +72,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
             {project.image && (
               <Box
                 sx={{
-                  flex: isMobile ? "0 0 220px" : "0 0 35%",
+                flex: isMobile ? "0 0 220px" : isMediumScreen ? "0 0 28%" : "0 0 35%",
                   borderBottom: (theme) =>
                     `2px solid ${theme.palette.primary.main}`,
                   overflow: "hidden",
@@ -93,8 +98,8 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
             <Box
               sx={{
                 flex: 1,
-                color: "#fff",
-                p: 3,
+                color: responsiveTextColor,
+                p: isMediumScreen ? 2 : 3,
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -103,17 +108,25 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
               <Box>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: 700, mb: 2, fontSize: { xs: "1.2rem", md: "1.3rem" } }}
+                  sx={{
+                    fontWeight: 700,
+                    mb: isMediumScreen ? 1.25 : 2,
+                    fontSize: { xs: "1.2rem", md: "1.15rem", lg: "1.22rem", xl: "1.3rem" },
+                  }}
                 >
                   {project.name}
                 </Typography>
                 <Typography
                   variant="body2"
                   sx={{
-                    lineHeight: 1.4,
-                    color: "rgba(255,255,255,0.85)",
+                    lineHeight: isMediumScreen ? 1.3 : 1.4,
+                    color: responsiveMutedTextColor,
                     whiteSpace: "pre-line",
-                    fontSize: { xs: "1rem", md: "1.05rem" },
+                    fontSize: { xs: "1rem", md: "0.92rem", lg: "0.98rem", xl: "1.05rem" },
+                    display: isMediumScreen ? "-webkit-box" : "block",
+                    WebkitBoxOrient: "vertical",
+                    WebkitLineClamp: isMediumScreen ? 8 : "unset",
+                    overflow: "hidden",
                   }}
                 >
                   <Trans

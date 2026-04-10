@@ -19,6 +19,7 @@ import { useNavLinks } from "./hooks/useNavLinks";
 import { MobileDrawer } from "./components/MobileDrawer";
 import { LanguageSwitcher } from "./components/LanguageSwitch";
 import { useActiveSection } from "../../../context/ActiveSectionProvider/useActiveSection";
+import { responsiveTextColor } from "../../../config/styles/theme";
 
 export const Navbar = () => {
   const { activeSection, setActiveSection } = useActiveSection();
@@ -30,7 +31,7 @@ export const Navbar = () => {
   const isCompactDesktop = useMediaQuery(
     "(min-width:1536px) and (max-width:1800px)",
   );
-  const showBrandText = isDesktop && !isCompactDesktop;
+  const showBrandText = isDesktop;
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
@@ -47,7 +48,12 @@ export const Navbar = () => {
         position="fixed"
         sx={{
           background: "rgba(0, 0, 0, 0.8)",
-          px: { xs: 2, xl: isCompactDesktop ? 4 : 10 },
+          px: {
+            xs: 2,
+            md: 3,
+            lg: 4,
+            xl: isCompactDesktop ? 4 : 10,
+          },
           py: 1,
           boxShadow: "none",
         }}
@@ -55,15 +61,15 @@ export const Navbar = () => {
         <Toolbar
           disableGutters
           sx={{
-            minHeight: { xs: 56, xl: isCompactDesktop ? 60 : 64 },
-            gap: { xs: 1, xl: isCompactDesktop ? 1.5 : 3 },
+            minHeight: { xs: 56, md: 60, xl: isCompactDesktop ? 60 : 64 },
+            gap: { xs: 1, md: 1.5, xl: isCompactDesktop ? 1.5 : 3 },
           }}
         >
           <IconButton
             color="inherit"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { xl: "none" } }}
+            sx={{ mr: 2, display: { xs: "inline-flex", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -74,7 +80,7 @@ export const Navbar = () => {
               display: "flex",
               alignItems: "center",
               textDecoration: "none",
-              color: "white",
+              color: "inherit",
               whiteSpace: "nowrap",
               flexShrink: 0,
             }}
@@ -114,9 +120,9 @@ export const Navbar = () => {
 
           <Box
             sx={{
-              display: { xs: "none", xl: "flex" },
+              display: { xs: "none", md: "flex" },
               alignItems: "center",
-              gap: isCompactDesktop ? 1.25 : 2.5,
+              gap: { md: 1.25, lg: 1.75, xl: isCompactDesktop ? 1.25 : 2.5 },
               minWidth: 0,
             }}
           >
@@ -125,21 +131,25 @@ export const Navbar = () => {
                 key={link.id}
                 onClick={() => handleScroll(link.id)}
                 sx={{
-                  color: activeSection === link.id ? "#fff" : "#888",
-                  fontSize: isCompactDesktop ? 16 : 18,
+                  color: activeSection === link.id ? responsiveTextColor : "#888",
+                  fontSize: {
+                    md: 15,
+                    lg: 16,
+                    xl: isCompactDesktop ? 16 : 18,
+                  },
                   fontWeight: 600,
                   textTransform: "none",
                   minWidth: "auto",
-                  px: isCompactDesktop ? 1 : 1.5,
+                  px: { md: 0.75, lg: 1, xl: isCompactDesktop ? 1 : 1.5 },
                   whiteSpace: "nowrap",
-                  "&:hover": { color: "#fff" },
+                  "&:hover": { color: responsiveTextColor },
                 }}
               >
                 {t(`navbar.${link.id}`)}
               </Button>
             ))}
 
-            <LanguageSwitcher compact={isCompactDesktop} />
+            <LanguageSwitcher compact={!isDesktop || isCompactDesktop} />
           </Box>
         </Toolbar>
       </AppBar>
@@ -149,7 +159,7 @@ export const Navbar = () => {
         open={mobileOpen}
         onClose={handleDrawerToggle}
         sx={{
-          display: { xs: "block", xl: "none" },
+          display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": { width: 240, background: "#000" },
         }}
       >

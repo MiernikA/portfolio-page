@@ -323,8 +323,8 @@
   "contact": {
     "subtitle": "Get in Touch",
     "downloadCV": "Download CV",
-    "cvPolish": "CV (Polish)",
-    "cvEnglish": "CV (English)",
+    "cvAts": "CV (ATS-friendly)",
+    "cvClassic": "CV (Classic)",
     "details": "Contact details",
     "form": {
       "nameLabel": "Your Name:",
