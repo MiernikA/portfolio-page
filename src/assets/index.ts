@@ -19,22 +19,21 @@ import projectMp3Preview from "./img/projects/mp3.gif";
 import projectPhysicsPreview from "./img/projects/physics.gif";
 import projectSnakePreview from "./img/projects/snake.gif";
 import projectWeatherPreview from "./img/projects/weather.gif";
-import skillBootstrapIcon from "./img/skills/bootstrap.png";
+import skillAwsIcon from "./img/skills/aws.png";
 import skillCssIcon from "./img/skills/css.png";
 import skillDockerIcon from "./img/skills/docker.png";
+import skillFastApiIcon from "./img/skills/fastapi.png";
 import skillFigmaIcon from "./img/skills/figma.png";
 import skillGitIcon from "./img/skills/git.png";
 import skillHtmlIcon from "./img/skills/html.png";
 import skillJavaIcon from "./img/skills/java.png";
 import skillJavascriptIcon from "./img/skills/javascript.png";
 import skillJestIcon from "./img/skills/jest.png";
-import skillJetbrainsIcon from "./img/skills/jetbrains.png";
+import skillNestJsIcon from "./img/skills/nestjs.png";
 import skillMuiIcon from "./img/skills/mui.png";
 import skillMysqlIcon from "./img/skills/mysql.png";
 import skillNextIcon from "./img/skills/next.png";
 import skillNodejsIcon from "./img/skills/nodejs.png";
-import skillOfficeIcon from "./img/skills/office.png";
-import skillPhotoshopIcon from "./img/skills/photoshop.png";
 import skillPostgresIcon from "./img/skills/postgres.png";
 import skillPythonIcon from "./img/skills/python.png";
 import skillReactjsIcon from "./img/skills/reactjs.png";
@@ -43,6 +42,7 @@ import skillTailwindIcon from "./img/skills/tailwind.png";
 import skillThreejsIcon from "./img/skills/threejs.png";
 import skillTypescriptIcon from "./img/skills/typescript.png";
 import skillViteIcon from "./img/skills/vite.png";
+import skillVueJsIcon from "./img/skills/vuejs.png";
 import cvEnglishUrl from "./cv/miernik_cv_eng.pdf";
 import cvPolishUrl from "./cv/miernik_cv_pl.pdf";
 import planetSceneUrl from "./models/planet/scene_optimized.glb?url";
@@ -96,22 +96,21 @@ export const rockTextureUrls: string[] = [
 ];
 
 export const skillIcons = {
-  bootstrap: skillBootstrapIcon,
+  aws: skillAwsIcon,
   css: skillCssIcon,
   docker: skillDockerIcon,
+  fastapi: skillFastApiIcon,
   figma: skillFigmaIcon,
   git: skillGitIcon,
   html: skillHtmlIcon,
   java: skillJavaIcon,
   javascript: skillJavascriptIcon,
   jest: skillJestIcon,
-  jetbrains: skillJetbrainsIcon,
   mui: skillMuiIcon,
   mysql: skillMysqlIcon,
+  nestjs: skillNestJsIcon,
   next: skillNextIcon,
   nodejs: skillNodejsIcon,
-  office: skillOfficeIcon,
-  photoshop: skillPhotoshopIcon,
   postgres: skillPostgresIcon,
   python: skillPythonIcon,
   reactjs: skillReactjsIcon,
@@ -120,6 +119,7 @@ export const skillIcons = {
   threejs: skillThreejsIcon,
   typescript: skillTypescriptIcon,
   vite: skillViteIcon,
+  vuejs: skillVueJsIcon,
 } as const;
 
 export { logoUrl, planetSceneUrl };

@@ -10,7 +10,7 @@ export const SectionTitle = ({ subtitle, title }: SectionTitleProps) => (
     <Typography
       sx={{
         textTransform: "uppercase",
-        mt: 2,
+        mt: { xs: 0, sm: 2 },
         color: "primary.main",
         fontWeight: 600,
         letterSpacing: 1,
@@ -25,6 +25,7 @@ export const SectionTitle = ({ subtitle, title }: SectionTitleProps) => (
         fontWeight: 800,
         mb: 2,
         letterSpacing: 0.5,
+        fontSize: { xs: "2.2rem", sm: undefined },
       }}
     >
       {title}

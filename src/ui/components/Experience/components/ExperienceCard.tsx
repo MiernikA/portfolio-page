@@ -8,6 +8,7 @@ type Props = {
   };
   index: number;
   total: number;
+  timelineInset: string;
   showIcons: boolean;
   onClick: () => void;
   isMobile: boolean;
@@ -17,12 +18,14 @@ export const ExperienceCard = ({
   exp,
   index,
   total,
+  timelineInset,
   showIcons,
   onClick,
   isMobile,
 }: Props) => {
   const isTop = index % 2 === 0;
   const { t } = useTranslation();
+  const desktopLeft = `calc(${timelineInset} + ${(index / (total - 1)) * 100}% * ((100% - (${timelineInset} * 2)) / 100%))`;
 
   return (
     <Box
@@ -33,7 +36,7 @@ export const ExperienceCard = ({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        left: isMobile ? "auto" : `${(index / (total - 1)) * 100}%`,
+        left: isMobile ? "auto" : desktopLeft,
         top: isMobile
           ? "auto"
           : isTop
@@ -54,8 +57,8 @@ export const ExperienceCard = ({
         alt={exp.title}
         sx={{
           background: "#fff",
-          width: 220,
-          height: 80,
+          width: "clamp(160px, 16vw, 220px)",
+          height: "clamp(64px, 6vw, 80px)",
           borderRadius: 5,
           objectFit: "contain",
           border: (theme) => `2px solid ${theme.palette.primary.main}`,

@@ -43,17 +43,23 @@ export const Navbar = () => {
         position="fixed"
         sx={{
           background: "rgba(0, 0, 0, 0.8)",
-          px: { xs: 2, lg: 10 },
+          px: { xs: 2, xl: 10 },
           py: 1,
           boxShadow: "none",
         }}
       >
-        <Toolbar>
+        <Toolbar
+          disableGutters
+          sx={{
+            minHeight: { xs: 56, xl: 64 },
+            gap: { xs: 1, xl: 3 },
+          }}
+        >
           <IconButton
             color="inherit"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { lg: "none" } }}
+            sx={{ mr: 2, display: { xl: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -71,13 +77,24 @@ export const Navbar = () => {
             <img
               src={logoUrl}
               alt="logo"
-              style={{ width: 28, height: 28, marginRight: 10 }}
+              style={{ width: 28, height: 28, marginRight: 8 }}
             />
-            <Typography variant="h6" sx={{ fontWeight: 700, fontSize: 20 }}>
-              Adrian Miernik{" "}
-              <span style={{ color: "#808080" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 700,
+                fontSize: { xs: 18, xl: 20 },
+                whiteSpace: "nowrap",
+              }}
+            >
+              Adrian Miernik
+              <Box
+                component="span"
+                sx={{ color: "#808080", display: { xs: "none", xl: "inline" } }}
+              >
+                {" "}
                 | Portfolio
-              </span>
+              </Box>
             </Typography>
           </Link>
 
@@ -85,9 +102,10 @@ export const Navbar = () => {
 
           <Box
             sx={{
-              display: { xs: "none", lg: "flex" },
+              display: { xs: "none", xl: "flex" },
               alignItems: "center",
-              gap: 4,
+              gap: 2.5,
+              minWidth: 0,
             }}
           >
             {navLinks.map((link) => (
@@ -99,6 +117,9 @@ export const Navbar = () => {
                   fontSize: 18,
                   fontWeight: 600,
                   textTransform: "none",
+                  minWidth: "auto",
+                  px: 1.5,
+                  whiteSpace: "nowrap",
                   "&:hover": { color: "#fff" },
                 }}
               >
@@ -116,7 +137,7 @@ export const Navbar = () => {
         open={mobileOpen}
         onClose={handleDrawerToggle}
         sx={{
-          display: { xs: "block", lg: "none" },
+          display: { xs: "block", xl: "none" },
           "& .MuiDrawer-paper": { width: 240, background: "#000" },
         }}
       >

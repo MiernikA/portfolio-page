@@ -16,6 +16,7 @@ export const Experience = () => {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const timelineInset = "12%";
 
   useEffect(() => {
     if (isMobile) return;
@@ -43,18 +44,18 @@ export const Experience = () => {
       <Box ref={sectionRef}>
         <Box
           sx={{
-            height: 600,
+            minHeight: isMobile ? "auto" : 600,
             display: "flex",
             flexDirection: isMobile ? "column" : "column",
-            justifyContent: "center",
+            justifyContent: isMobile ? "flex-start" : "center",
             userSelect: "none",
             position: "relative",
-            gap: isMobile ? 3 : 0,
+            gap: isMobile ? 4 : 0,
           }}
         >
           <Box
             sx={{
-              width: "100%",
+              width: isMobile ? "100%" : `calc(100% - (${timelineInset} * 2))`,
               height: 5,
               background: (theme) =>
                 `linear-gradient(90deg, ${theme.palette.primary.main} 0%, #ffb347 100%)`,
@@ -64,6 +65,7 @@ export const Experience = () => {
               transition: "transform 0.8s ease-in-out",
               position: "relative",
               display: isMobile ? "none" : "block",
+              mx: "auto",
             }}
           >
             {!isMobile &&
@@ -94,6 +96,7 @@ export const Experience = () => {
               exp={exp}
               index={i}
               total={experiences.length}
+              timelineInset={timelineInset}
               showIcons={showIcons || isMobile}
               onClick={() => setOpenIndex(i)}
               isMobile={isMobile}

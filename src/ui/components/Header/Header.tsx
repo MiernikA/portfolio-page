@@ -8,7 +8,14 @@ export const Header = () => {
   const titles = [t("header.sub1"), t("header.sub2"), t("header.sub3")];
 
   return (
-    <Box component="section" id="home">
+    <Box
+      component="section"
+      id="home"
+      sx={{
+        minHeight: { xs: "100dvh", sm: "100vh" },
+        scrollMarginTop: { xs: "72px", sm: 0 },
+      }}
+    >
       <Container
         maxWidth="xl"
         sx={{

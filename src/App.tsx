@@ -10,11 +10,11 @@ import { Contact } from "./ui/components/Contact/Contact";
 import { RocketButton } from "./ui/components/shared/RocketButton/RocketButton";
 
 const sections = [
-  { component: <AboutMe />, mt: { xs: "150vh" } },
-  { component: <Experience />, mt: { xs: "170vh" } },
-  { component: <Skills />, mt: { xs: 0 } },
-  { component: <Projects />, mt: { xs: "100vh" } },
-  { component: <Contact />, mt: { xs: "120vh" } },
+  { component: <AboutMe />, mt: { xs: 0, sm: "110vh" } },
+  { component: <Experience />, mt: { xs: 0, sm: "110vh" } },
+  { component: <Skills />, mt: { xs: 0, sm: 0 } },
+  { component: <Projects />, mt: { xs: 0, sm: "56vh" } },
+  { component: <Contact />, mt: { xs: 0, sm: "72vh" } },
 ];
 
 function App() {
