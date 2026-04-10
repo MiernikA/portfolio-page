@@ -24,7 +24,7 @@ export const VerticalDivider = () => {
       <Box
         sx={{
           width: 5,
-          height: 260,
+          height: { lg: 220, xl: 260 },
           borderRadius: 1,
           background: `linear-gradient(180deg, ${theme.palette.primary.main} 0%, rgba(0, 0, 0, 0) 100%)`,
         }}

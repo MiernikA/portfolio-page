@@ -21,22 +21,31 @@ export const Header = () => {
         sx={{
           position: "absolute",
           inset: 0,
-          top: { xs: 100, lg: 130 },
+          top: { xs: 92, md: 108, xl: 130 },
           display: "flex",
-          gap: 2,
+          alignItems: "flex-start",
+          gap: { xs: 1, md: 2 },
         }}
       >
         <VerticalDivider />
 
-        <Box sx={{ zIndex: 2, ml: { xs: 1, lg: 3 } }}>
+        <Box
+          sx={{
+            zIndex: 2,
+            ml: { xs: 1, md: 2, lg: 3 },
+            maxWidth: { xs: "100%", md: "55%", xl: "unset" },
+            pr: { xs: 2, md: 0 },
+          }}
+        >
           <Typography
             variant="h1"
             sx={{
               color: "#fff",
               fontWeight: 800,
               mb: 3,
-              fontSize: { xs: "2.8rem", lg: "4.2rem" },
+              fontSize: { xs: "2.8rem", sm: "3.4rem", lg: "4.2rem" },
               letterSpacing: 1,
+              lineHeight: 1.05,
             }}
           >
             {t("header.greeting")}{" "}
@@ -53,7 +62,7 @@ export const Header = () => {
                 sx={{
                   color: "primary.contrastText",
                   lineHeight: 1.7,
-                  fontSize: { xs: "1.2rem", lg: "1.6rem" },
+                  fontSize: { xs: "1.2rem", md: "1.35rem", lg: "1.6rem" },
                 }}
               >
                 {title}

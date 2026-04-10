@@ -9,13 +9,14 @@ export const GithubCard = () => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
     <Box
       onClick={handleClick}
       sx={{
-        width: isMobile ? "100%" : 450,
-        height: isMobile ? "auto" : 600,
+        width: "100%",
+        height: isMobile ? "auto" : isCompact ? 560 : 600,
         minHeight: 300,
         display: "flex",
         flexDirection: "column",
@@ -36,15 +37,18 @@ export const GithubCard = () => {
         },
       }}
     >
-      <GitHub sx={{ fontSize: 80, mb: 2 }} />
-      <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
+      <GitHub sx={{ fontSize: { xs: 68, md: 76, xl: 84 }, mb: 2 }} />
+      <Typography
+        variant="h6"
+        sx={{ fontWeight: 700, mb: 2, fontSize: { xs: "1.2rem", md: "1.3rem" } }}
+      >
         {t("projects.githubCard.title")}
       </Typography>
       <Typography
         variant="body2"
         sx={{
           color: "rgba(255,255,255,0.85)",
-          fontSize: "1rem",
+          fontSize: { xs: "1rem", md: "1.05rem" },
           px: 3,
           "&:hover": { color: "primary.main" },
         }}

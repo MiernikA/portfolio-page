@@ -27,13 +27,13 @@ export const SectionLayout = ({
       <Container
         maxWidth="xl"
         sx={{
-          minHeight: { xs: "100dvh", sm: "100vh" },
+          minHeight: { xs: "auto", md: "100vh" },
           display: "flex",
           flexDirection: "column",
-          justifyContent: { xs: "flex-start", sm: "center" },
-          gap: { xs: 3, sm: 2 },
-          py: { xs: 4, sm: 0 },
-          pt: { xs: 10, sm: 0 },
+          justifyContent: { xs: "flex-start", md: "center" },
+          gap: { xs: 3, md: 2 },
+          py: { xs: 4, md: 6, xl: 0 },
+          pt: { xs: 10, md: 12, xl: 0 },
         }}
       >
         <SectionTitle subtitle={subtitle} title={title} />

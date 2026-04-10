@@ -44,8 +44,10 @@ export const TiltCardContainer = ({ index, children }: Props) => {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       sx={{
-        width: 220,
-        height: 320,
+        width: { xs: "calc(50% - 8px)", sm: 200, lg: 220 },
+        minWidth: { xs: 150, sm: "auto" },
+        maxWidth: 220,
+        height: { xs: 230, sm: 280, lg: 320 },
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(30px)",
         transition: "opacity 0.8s ease-out, transform 0.8s ease-out",

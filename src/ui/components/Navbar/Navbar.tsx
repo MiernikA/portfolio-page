@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Box,
@@ -7,6 +7,8 @@ import {
   Typography,
   Button,
   Drawer,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
@@ -23,6 +25,12 @@ export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t } = useTranslation();
   const navLinks = useNavLinks();
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("xl"));
+  const isCompactDesktop = useMediaQuery(
+    "(min-width:1536px) and (max-width:1800px)",
+  );
+  const showBrandText = isDesktop && !isCompactDesktop;
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
@@ -33,17 +41,13 @@ export const Navbar = () => {
       setActiveSection(id);
     }
   };
-  useEffect(() => {
-    console.log(activeSection);
-  }, [activeSection]);
-
   return (
     <>
       <AppBar
         position="fixed"
         sx={{
           background: "rgba(0, 0, 0, 0.8)",
-          px: { xs: 2, xl: 10 },
+          px: { xs: 2, xl: isCompactDesktop ? 4 : 10 },
           py: 1,
           boxShadow: "none",
         }}
@@ -51,8 +55,8 @@ export const Navbar = () => {
         <Toolbar
           disableGutters
           sx={{
-            minHeight: { xs: 56, xl: 64 },
-            gap: { xs: 1, xl: 3 },
+            minHeight: { xs: 56, xl: isCompactDesktop ? 60 : 64 },
+            gap: { xs: 1, xl: isCompactDesktop ? 1.5 : 3 },
           }}
         >
           <IconButton
@@ -71,31 +75,39 @@ export const Navbar = () => {
               alignItems: "center",
               textDecoration: "none",
               color: "white",
+              whiteSpace: "nowrap",
+              flexShrink: 0,
             }}
             onClick={() => handleScroll("home")}
           >
             <img
               src={logoUrl}
               alt="logo"
-              style={{ width: 28, height: 28, marginRight: 8 }}
-            />
-            <Typography
-              variant="h6"
-              sx={{
-                fontWeight: 700,
-                fontSize: { xs: 18, xl: 20 },
-                whiteSpace: "nowrap",
+              style={{
+                width: isCompactDesktop ? 24 : 28,
+                height: isCompactDesktop ? 24 : 28,
+                marginRight: showBrandText ? 8 : 0,
               }}
-            >
-              Adrian Miernik
-              <Box
-                component="span"
-                sx={{ color: "#808080", display: { xs: "none", xl: "inline" } }}
+            />
+            {showBrandText && (
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 700,
+                  fontSize: { xs: 18, xl: 20 },
+                  whiteSpace: "nowrap",
+                }}
               >
-                {" "}
-                | Portfolio
-              </Box>
-            </Typography>
+                Adrian Miernik
+                <Box
+                  component="span"
+                  sx={{ color: "#808080", display: { xs: "none", xl: "inline" } }}
+                >
+                  {" "}
+                  | Portfolio
+                </Box>
+              </Typography>
+            )}
           </Link>
 
           <Box sx={{ flexGrow: 1 }} />
@@ -104,7 +116,7 @@ export const Navbar = () => {
             sx={{
               display: { xs: "none", xl: "flex" },
               alignItems: "center",
-              gap: 2.5,
+              gap: isCompactDesktop ? 1.25 : 2.5,
               minWidth: 0,
             }}
           >
@@ -114,11 +126,11 @@ export const Navbar = () => {
                 onClick={() => handleScroll(link.id)}
                 sx={{
                   color: activeSection === link.id ? "#fff" : "#888",
-                  fontSize: 18,
+                  fontSize: isCompactDesktop ? 16 : 18,
                   fontWeight: 600,
                   textTransform: "none",
                   minWidth: "auto",
-                  px: 1.5,
+                  px: isCompactDesktop ? 1 : 1.5,
                   whiteSpace: "nowrap",
                   "&:hover": { color: "#fff" },
                 }}
@@ -127,7 +139,7 @@ export const Navbar = () => {
               </Button>
             ))}
 
-            <LanguageSwitcher />
+            <LanguageSwitcher compact={isCompactDesktop} />
           </Box>
         </Toolbar>
       </AppBar>

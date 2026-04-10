@@ -17,6 +17,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,8 +49,8 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
     >
       <Box
         sx={{
-          width: isMobile ? "100%" : 450,
-          height: isMobile ? "auto" : 600,
+          width: "100%",
+          height: isMobile ? "auto" : isCompact ? 560 : 600,
           display: "flex",
           flexDirection: "column",
           borderRadius: 2,
@@ -66,7 +67,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
             {project.image && (
               <Box
                 sx={{
-                  flex: "0 0 35%",
+                  flex: isMobile ? "0 0 220px" : "0 0 35%",
                   borderBottom: (theme) =>
                     `2px solid ${theme.palette.primary.main}`,
                   overflow: "hidden",
@@ -100,7 +101,10 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
               }}
             >
               <Box>
-                <Typography variant="h6" sx={{ fontWeight: 700, mb: 2 }}>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: 700, mb: 2, fontSize: { xs: "1.2rem", md: "1.3rem" } }}
+                >
                   {project.name}
                 </Typography>
                 <Typography
@@ -109,7 +113,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
                     lineHeight: 1.4,
                     color: "rgba(255,255,255,0.85)",
                     whiteSpace: "pre-line",
-                    fontSize: "1rem",
+                    fontSize: { xs: "1rem", md: "1.05rem" },
                   }}
                 >
                   <Trans

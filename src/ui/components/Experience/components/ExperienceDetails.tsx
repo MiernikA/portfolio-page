@@ -48,8 +48,10 @@ export const ExperienceDetails = ({ open, experience, onClose }: Props) => {
             bgcolor: "#121212",
             borderRadius: isMobile ? 0 : 8,
             p: isMobile ? 3 : 4,
-            width: isMobile ? "100%" : 750,
+            width: isMobile ? "100%" : "min(750px, 92vw)",
             height: isMobile ? "100vh" : "auto",
+            maxHeight: isMobile ? "100vh" : "88vh",
+            overflowY: "auto",
             outline: "none",
             color: "#fff",
           }}

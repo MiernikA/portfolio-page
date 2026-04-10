@@ -38,7 +38,7 @@ export const ContactCard = ({
 }: Props) => {
   const { t } = useTranslation();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
 
   return (
     <motion.form
@@ -47,7 +47,7 @@ export const ContactCard = ({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      style={{ width: isMobile ? "100%" : "65%" }}
+      style={{ width: isCompact ? "100%" : "65%" }}
     >
       <Card
         sx={{
@@ -55,7 +55,7 @@ export const ContactCard = ({
           border: (t) => `2px solid ${t.palette.primary.main}60`,
           boxShadow: (t) => `0 0 25px ${t.palette.primary.main}25`,
           borderRadius: 3,
-          height: isMobile ? "auto" : 600,
+          height: isCompact ? "auto" : 600,
           display: "flex",
           width: "100%",
           transition: "box-shadow 0.3s ease",
@@ -70,9 +70,9 @@ export const ContactCard = ({
             flexDirection: "column",
             justifyContent: "flex-start",
             alignItems: "flex-start",
-            width: "90%",
-            mt: 3,
-            ml: 2,
+            width: "100%",
+            px: { xs: 1, sm: 2 },
+            py: { xs: 1, sm: 2 },
           }}
         >
           <Typography sx={{ color: "#fff", mb: 0.5, fontWeight: 600 }}>

@@ -18,8 +18,8 @@ export const AboutMe = () => {
         variant="body1"
         sx={{
           lineHeight: 1.9,
-          fontSize: "1.15rem",
-          textAlign: "justify",
+          fontSize: { xs: "1rem", md: "1.05rem", xl: "1.15rem" },
+          textAlign: { xs: "left", md: "justify" },
           letterSpacing: 0.5,
           color: "primary.contrastText",
           mb: 4,
@@ -44,7 +44,7 @@ export const AboutMe = () => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: 3,
+          gap: { xs: 2, md: 3 },
 
           mt: 2,
         }}

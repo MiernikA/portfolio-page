@@ -51,13 +51,13 @@ export const Projects = () => {
               sx={{
                 flex: {
                   xs: "1 1 100%",
-                  sm: "1 1 calc(50% - 2rem)",
-                  md: "1 1 calc(33.333% - 2rem)",
+                  md: "1 1 calc(50% - 2rem)",
+                  xl: "1 1 calc(33.333% - 2rem)",
                 },
                 maxWidth: {
                   xs: "100%",
-                  sm: "calc(50% - 2rem)",
                   md: 450,
+                  xl: 450,
                 },
                 display: "flex",
                 justifyContent: "center",
@@ -85,13 +85,18 @@ export const Projects = () => {
             sx={{
               bgcolor: "rgba(255,255,255,0.05)",
               color: "primary.main",
+              p: 1.5,
               "&:hover": { bgcolor: "rgba(255,200,61,0.2)" },
             }}
           >
-            <ArrowBackIosNew fontSize="small" />
+            <ArrowBackIosNew sx={{ fontSize: 26 }} />
           </IconButton>
 
-          <Typography variant="body2" color="primary.main">
+          <Typography
+            variant="body2"
+            color="primary.main"
+            sx={{ fontSize: "1.15rem", fontWeight: 700 }}
+          >
             {page + 1} / {totalPages}
           </Typography>
 
@@ -101,10 +106,11 @@ export const Projects = () => {
             sx={{
               bgcolor: "rgba(255,255,255,0.05)",
               color: "primary.main",
+              p: 1.5,
               "&:hover": { bgcolor: "rgba(255,200,61,0.2)" },
             }}
           >
-            <ArrowForwardIos fontSize="small" />
+            <ArrowForwardIos sx={{ fontSize: 26 }} />
           </IconButton>
         </Stack>
       </Box>

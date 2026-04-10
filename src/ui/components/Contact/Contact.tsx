@@ -29,7 +29,7 @@ export const Contact = () => {
 
   const { t } = useTranslation();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isCompact = useMediaQuery(theme.breakpoints.down("lg"));
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -92,14 +92,14 @@ export const Contact = () => {
       title={t("navbar.contact")}
     >
       <Stack
-        direction={isMobile ? "column" : "row"}
+        direction={isCompact ? "column" : "row"}
         spacing={6}
         alignItems="stretch"
         sx={{
           mt: 2,
           width: "100%",
           "& > *": {
-            width: isMobile ? "100%" : "auto",
+            width: isCompact ? "100%" : "auto",
           },
         }}
       >
@@ -116,7 +116,7 @@ export const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{
-            width: isMobile ? "100%" : "30%",
+            width: isCompact ? "100%" : "30%",
             position: "relative",
             height: "100%",
           }}
