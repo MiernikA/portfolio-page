@@ -17,6 +17,7 @@ export const GithubCard = () => {
       onClick={handleClick}
       sx={{
         width: "100%",
+        minWidth: 0,
         height: isMobile ? "auto" : isMediumScreen ? 450 : 600,
         minHeight: 300,
         display: "flex",

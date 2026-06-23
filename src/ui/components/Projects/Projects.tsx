@@ -119,6 +119,7 @@ export const Projects = () => {
               flexWrap: "wrap",
               gap: "2rem",
               width: "100%",
+              minWidth: 0,
             }}
           >
             {currentItems.map((item, index) => (
@@ -136,6 +137,7 @@ export const Projects = () => {
                     lg: 470,
                     xl: 450,
                   },
+                  minWidth: 0,
                   display: "flex",
                   justifyContent: "center",
                 }}

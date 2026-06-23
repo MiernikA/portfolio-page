@@ -10,10 +10,21 @@ export const ProjectTags = ({ tags = [] }: Props) => {
   return (
     <Stack
       direction="row"
-      spacing={1}
+      spacing={0}
       sx={{
         borderTop: "1px solid rgba(255,255,255,0.2)",
         pt: 2,
+        flexWrap: "wrap",
+        gap: 1,
+        minWidth: 0,
+        "& .MuiChip-root": {
+          maxWidth: "100%",
+        },
+        "& .MuiChip-label": {
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          whiteSpace: "nowrap",
+        },
       }}
     >
       {tags.map((tag) => (

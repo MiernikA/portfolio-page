@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About me",
+    "about": "About Me",
     "experience": "Experience",
     "skills": "Skills",
     "contact": "Contact",
@@ -9,20 +9,20 @@
   },
   "header": {
     "greeting": "Hi, I'm",
-    "sub1": "Fullstack Software Engineer",
+    "sub1": "Full-Stack Software Engineer",
     "sub2": "UI/UX Designer",
-    "sub3": "Games Geek"
+    "sub3": "Gaming Geek"
   },
   "about": {
     "overview": "Overview",
-    "content": "I began my programming journey in high school about eight years ago, focusing on <orange>UI design</orange> and <orange>frontend development</orange>. Over the past two years of my professional career, I have expanded my skills in <orange>backend</orange> and <orange>database management</orange>, becoming more adaptable and eager to learn.<br/> Through both university studies and professional work, I have gained strong <orange>teamwork experience</orange> — actively engaging in code reviews, project planning, and team discussions. My four years as a tutor have also strengthened my <orange>communication</orange> and teaching skills. <br/>I am a <orange>fast learner</orange> who enjoys collaboration and continuous self-improvement, aiming to create projects that combine functionality with excellent user experience.",
+    "content": "I began my programming journey in high school about eight years ago, focusing on <orange>UI design</orange> and <orange>frontend development</orange>. Over the past two years of my professional career, I have expanded my skills in <orange>backend development</orange> and <orange>database management</orange>, becoming more adaptable and eager to learn.<br/> Through both university studies and professional work, I have gained strong <orange>teamwork experience</orange>, actively engaging in code reviews, project planning, and team discussions. My four years as a tutor have also strengthened my <orange>communication</orange> and teaching skills.<br/> I am a <orange>fast learner</orange> who enjoys collaboration and continuous self-improvement, aiming to create projects that combine functionality with excellent user experience.",
     "tiles": {
-      "sdlc": "Uderstand SDLC principles",
+      "sdlc": "Understanding of SDLC principles",
       "knowledge": "Open to acquiring new knowledge",
       "scrum": "Experienced in Agile methodologies",
       "communicative": "Communicative and flexible",
       "ui": "Focused on user experience",
-      "tech": "Technical versatility"
+      "tech": "Technically versatile"
     }
   },
   "experience": {
@@ -34,8 +34,8 @@
       {
         "img": "img/experience/codibly.png",
         "title": "QA Intern – Codibly S.A.",
-        "date": "Feb. 2019 - May 2019",
-        "description": "My first job in the IT sector, completed as part of a high school internship program. It was a period of intensive learning, during which I gained insight into teamwork dynamics and the process of software development and testing. I participated in training sessions, project meetings, and daily tasks, gradually improving my technical skills and understanding of industry best practices.",
+        "date": "Feb. 2019 – May 2019",
+        "description": "My first job in the IT sector, completed as part of a high school internship program. It was a period of intensive learning, during which I gained insight into teamwork dynamics and the software development and testing process. I participated in training sessions, project meetings, and daily tasks, gradually improving my technical skills and understanding of industry best practices.",
         "responsibilities": [
           "Conducting stress tests using JMeter",
           "Writing tests for frontend components",
@@ -59,10 +59,10 @@
         "img": "img/experience/aptiv.png",
         "title": "Technical Assistant – Aptiv Services Poland",
         "date": "Oct. 2020 – Nov. 2020",
-        "description": "The second internship completed as part of my high school program, this time with a stronger focus on working with network systems and their physical maintenance. I was responsible for assembling integrated circuits, providing technical support to senior staff, and developing simple Python scripts for testing closed network systems.",
+        "description": "My second internship, completed as part of my high school program, focused more strongly on working with network systems and their physical maintenance. I was responsible for assembling integrated circuits, providing technical support to senior staff, and developing simple Python scripts for testing closed network systems.",
         "responsibilities": [
-          "Maintenance of physical network and electronic infrastructure",
-          "Installation and testing of integrated circuits and hardware components",
+          "Maintaining physical network and electronic infrastructure",
+          "Installing and testing integrated circuits and hardware components",
           "Providing helpdesk and on-site technical support",
           "Developing simple Python scripts for testing and diagnostics",
           "Troubleshooting and performing minor hardware repairs"
@@ -70,15 +70,15 @@
         "technologies": [
           "Python",
           "Electronics",
-          "Hardware installation",
-          "Diagnostics and troubleshooting"
+          "Hardware Installation",
+          "Diagnostics and Troubleshooting"
         ]
       },
       {
         "img": "img/experience/edualy.png",
         "title": "Tutor – Edualy",
         "date": "Sep. 2021 – Present",
-        "description": "During my work as a tutor, I developed strong communication skills, patience, and an individualized approach to students. I learned how to effectively explain complex concepts in an accessible way, foster motivation, and support the development of analytical thinking and independent problem-solving skills.",
+        "description": "During my work as a tutor, I developed strong communication skills, patience, and an individualized approach to students. I learned how to explain complex concepts in an accessible way, foster motivation, and support the development of analytical thinking and independent problem-solving skills.",
         "responsibilities": [
           "Preparing students for final exams in computer science, mathematics, and physics",
           "Conducting lessons for vocational exam preparation",
@@ -92,20 +92,20 @@
           "CSS",
           "MySQL",
           "MS Office",
-          "Communication skills"
+          "Communication Skills"
         ]
       },
       {
         "img": "img/experience/codibly-spyro.png",
         "title": "Junior Software Developer – Codibly",
         "date": "Jun. 2024 – Jan. 2026",
-        "description": "As a member of the development team, I participated in the implementation of commercial projects in the field of e-mobility and renewable energy. My work involved designing and developing solutions for both client-side and server-side applications, as well as actively contributing to planning, requirements analysis, and process optimization within the team. I collaborated directly with clients, presenting project progress and proposing functional improvements, while also providing UX/UI design advice. Additionally, I supported the recruitment process of interns and continuously expanded my technical skills by learning new technologies.",
+        "description": "As a member of the development team, I participated in the implementation of commercial projects in the fields of e-mobility and renewable energy. My work involved designing and developing solutions for both client-side and server-side applications, as well as actively contributing to planning, requirements analysis, and process optimization within the team. I collaborated directly with clients, presented project progress, proposed functional improvements, and provided UX/UI design advice. Additionally, I supported the intern recruitment process and continuously expanded my technical skills by learning new technologies.",
         "responsibilities": [
           "Designing and implementing frontend and backend functionalities",
           "Collaborating with the project team on requirement refinement and sprint planning",
           "Maintaining and extending existing system modules",
           "Participating in daily Scrum meetings and code reviews",
-          "Assisting in the recruitment of interns and supporting their technical growth",
+          "Assisting in intern recruitment and supporting their technical growth",
           "Regularly presenting project progress and deliverables to the client",
           "Learning and adopting new technologies in response to project needs",
           "Providing active input on design and UX/UI aspects"
@@ -128,20 +128,20 @@
         "img": "img/experience/solidstudio.png",
         "title": "Node.js Developer – Solidstudio",
         "date": "Jan. 2026 – Present",
-        "description": "As a member of the technical support team, I worked on maintaining and improving the company’s core product, which delivers e-mobility solutions to clients worldwide. I was responsible for direct communication with clients, verifying and resolving reported issues, and implementing new functionalities based on their requirements. Additionally, I contributed to the development of an AI-based tool aimed at automating the most time-consuming aspects of ticket evaluation and handling.",
+        "description": "As a member of the technical support team, I work on maintaining and improving the company’s core product, which delivers e-mobility solutions to clients worldwide. I am responsible for direct communication with clients, verifying and resolving reported issues, and implementing new functionalities based on their requirements. Additionally, I contribute to the development of an AI-based tool aimed at automating the most time-consuming aspects of ticket evaluation and handling.",
         "responsibilities": [
           "Fixing bugs and implementing features based on client requests",
-          "Direct communication with clients and participation in requirement planning and analysis",
+          "Communicating directly with clients and participating in requirement planning and analysis",
           "Acting as a technical expert in the field of e-mobility protocols",
-          "Regular monitoring of infrastructure status and responding to accuring issues",
-          "Developing an AI-based tool aimed at optimizing the handling of client support tickets"
+          "Regularly monitoring infrastructure status and responding to recurring issues",
+          "Developing an AI-based tool aimed at optimizing client support ticket handling"
         ],
         "technologies": [
-          "NodeJs",
-          "NestJs",
+          "Node.js",
+          "NestJS",
           "Java",
           "Python",
-          "FastApi",
+          "FastAPI",
           "AI Development",
           "PostgreSQL",
           "AWS",
@@ -153,23 +153,23 @@
     ]
   },
   "projects": {
-    "subtitle": "Gallery of my work",
+    "subtitle": "Gallery of My Work",
     "githubCard": {
-      "title": "View more on GitHub",
+      "title": "View More on GitHub",
       "subtitle": "Explore all my repositories and side projects."
     },
     "items": [
       {
         "name": "Weather App",
         "image": "img/projects/weather.gif",
-        "description": "The Weather App is a full-stack application that provides <orange>weather forecasts</orange>, along with estimates of energy generated by <orange>photovoltaic panels</orange> for the upcoming week, based on the user's <orange>geolocation</orange>.<br/> Frontend is a React with <orange>Material-UI</orange>, which utilizes my Node.js endpoint. The application also offers a <orange>dark mode</orange> feature.",
+        "description": "The Weather App is a full-stack application that provides <orange>weather forecasts</orange>, along with estimates of energy generated by <orange>photovoltaic panels</orange> for the upcoming week, based on the user's <orange>geolocation</orange>.<br/> The frontend is built with React and <orange>Material UI</orange>, and it uses my Node.js endpoint. The application also offers a <orange>dark mode</orange> feature.",
         "tags": [
           {
             "name": "React",
             "color": "#00ffcc"
           },
           {
-            "name": "Node",
+            "name": "Node.js",
             "color": "#00ffcc"
           },
           {
@@ -185,12 +185,37 @@
         "codeLink": "https://github.com/MiernikA/weather-app"
       },
       {
-        "name": "Color Lines",
-        "image": "img/projects/balls.gif",
-        "description": "Project is a replica of the widely available <orange>Color Lines</orange> game (match 5). <br/>From a technical standpoint, it involves a <orange>grid</orange> of div elements generated at <orange>random positions</orange> with randomly colored balls. Win condition is based on the <orange>number of balls</orange> on the board, and the core of the game is the <orange>Depth-First Search (DFS)</orange> algorithm for <orange>pathfinding</orange>. The project is essentially 100% TypeScript",
+        "name": "IOTA Network Visualizer",
+        "image": "img/projects/iota.gif",
+        "description": "A lightweight <orange>IOTA network dashboard</orange> for visualizing live blockchain activity, validator data, epochs, and checkpoints.<br/>The app is built with <orange>React</orange>, <orange>TypeScript</orange>, and <orange>Vite</orange>, using <orange>IOTA JSON-RPC endpoints</orange> to fetch network data. It includes interactive charts powered by <orange>Chart.js</orange> and a 3D validator globe built with <orange>Three.js</orange> and <orange>Globe.gl</orange>.",
         "tags": [
           {
-            "name": "Highschool-Project",
+            "name": "React",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "TypeScript",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Dashboard",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Frontend",
+            "color": "#ffc94d"
+          }
+        ],
+        "demoLink": "https://miernika.github.io/iota-network-visualizer",
+        "codeLink": "https://github.com/MiernikA/iota-network-visualizer"
+      },
+      {
+        "name": "Color Lines",
+        "image": "img/projects/balls.gif",
+        "description": "This project is a replica of the widely available <orange>Color Lines</orange> game, also known as Match 5.<br/>From a technical standpoint, it involves a <orange>grid</orange> of div elements generated at <orange>random positions</orange> with randomly colored balls.<br/>The core of the game is the <orange>Depth-First Search (DFS)</orange> algorithm for <orange>pathfinding</orange>. Written almost entirely in TypeScript.",
+        "tags": [
+          {
+            "name": "High School Project",
             "color": "#4db8ff"
           },
           {
@@ -212,10 +237,10 @@
       {
         "name": "Bot Shooter",
         "image": "img/projects/botshooter.gif",
-        "description": "An <orange>AI-driven</orange> arena shooter built with <orange>Pygame</orange>, where bots navigate, detect enemies, and engage in combat. The goal is to reach 5 kills as quickly as possible. \n\nBots compete in a closed arena, collecting resources and eliminating opponents. Their behavior is driven by a <orange>state machine</orange>, and the map is represented as a graph with <orange>A* pathfinding</orange> implementation.",
+        "description": "An <orange>AI-driven</orange> arena shooter built with <orange>Pygame</orange>, where bots navigate, detect enemies, and engage in combat. The goal is to reach 5 kills as quickly as possible.\n\nBots compete in a closed arena, collecting resources and eliminating opponents. Their behavior is driven by a <orange>state machine</orange>, and the map is represented as a graph with an <orange>A* pathfinding</orange>.",
         "tags": [
           {
-            "name": "University-Project",
+            "name": "University Project",
             "color": "#4db8ff"
           },
           {
@@ -232,14 +257,20 @@
       {
         "name": "Hunters and Beasts",
         "image": "img/projects/bestie.gif",
-        "description": "A turn-based <orange>multiplayer board game</orange> supported by a web application, where players take on the role of hunters tracking mysterious beasts across a dynamic map.<br/><br/>The project combines a <orange>Vue frontend</orange> with a <orange>FastAPI backend</orange>, handling real-time game state via <orange>WebSockets</orange>. Core mechanics include <orange>state-driven AI behaviors</orange> for beasts, turn management, and interactive map-based gameplay.",
+        "description": "A web application supporting a <orange>multiplayer board game</orange> about hunters tracking dangerous beasts.<br/><br/>The project combines a <orange>Vue frontend</orange> with a <orange>FastAPI backend</orange>, handling real-time game state through <orange>WebSockets</orange>. Core mechanics include <orange>state-driven AI behaviors</orange> for beasts, turn management, and interactive map-based gameplay.",
         "tags": [
-          { "name": "Vue.js", "color": "#00ffcc" },
           {
-            "name": "FastApi",
+            "name": "Vue.js",
             "color": "#00ffcc"
           },
-          { "name": "Full-Stack", "color": "#ffc94d" },
+          {
+            "name": "FastAPI",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Full-Stack",
+            "color": "#ffc94d"
+          },
           {
             "name": "AI",
             "color": "#ff66cc"
@@ -251,10 +282,10 @@
       {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
-        "description": "This project is a collection of interactive <orange>physics simulations</orange> created using <orange>pygame</orange>. It includes implementations of systems such as <orange>mass-spring models</orange>, <orange>cloth simulation</orange> with <orange>Verlet integration</orange>, and <orange>collision mechanics</orange> for soft and rigid bodies — accompanied by visual representations and detailed mathematical formulas included in the README.",
+        "description": "This project is a collection of interactive <orange>physics simulations</orange> created using <orange>Pygame</orange>. It includes implementations of systems such as <orange>mass-spring models</orange>, <orange>cloth simulation</orange> with <orange>Verlet integration</orange>, and <orange>collision mechanics</orange> for soft and rigid bodies, accompanied by visual representations and detailed mathematical formulas included in the README.",
         "tags": [
           {
-            "name": "University-Project",
+            "name": "University Project",
             "color": "#4db8ff"
           },
           {
@@ -269,16 +300,16 @@
         "codeLink": "https://github.com/MiernikA/Programowanie-fizyki"
       },
       {
-        "name": "Mp3 Player",
+        "name": "MP3 Player",
         "image": "img/projects/mp3.gif",
-        "description": "A project fulfilling the role of a <orange>music player</orange> with an interface and the capability of <orange>uploading</orange> custom playlists.<br/>The majority of the project is centered around the NodeJS backend, which handles the <orange>reading of music albums</orange> from the internal project folder and the <orange>storage of user-uploaded albums</orange>. On the frontend side, a simple <orange>CSS</orange> with additional <orange>animations</orange> is employed.",
+        "description": "A project that serves as a music player with an interface and the ability to <orange>upload</orange> custom playlists.<br/>Most of the project focuses on the <orange>Node.js backend</orange>, which handles <orange>reading music albums</orange> from the internal project folder and <orange>storing user-uploaded albums</orange>.",
         "tags": [
           {
-            "name": "Highschool-Project",
+            "name": "High School Project",
             "color": "#4db8ff"
           },
           {
-            "name": "Node",
+            "name": "Node.js",
             "color": "#00ffcc"
           },
           {
@@ -296,10 +327,10 @@
       {
         "name": "Snake Game",
         "image": "img/projects/snake.gif",
-        "description": "Snake Game is essentially my first encounter withprogramming, created on <orange>Client-Side Application</orange> classes on my first year in highschool. <br/>The project is based on a simple <orange>interval</orange> with 'movement' of the snake, randomly generates the position of the fruit and uses a straightforward <orange>collision mechanism</orange>. I must admit that its presence here is primarily due to nostalgia",
+        "description": "Snake Game was essentially my first encounter with programming, created during Client-Side Application classes in my first year of high school.<br/>The project is based on a simple <orange>interval</orange>, randomly generates the fruit position, and uses a straightforward <orange>collision mechanism</orange>. I must admit that its presence here is primarily due to nostalgia.",
         "tags": [
           {
-            "name": "Highschool-Project",
+            "name": "High School Project",
             "color": "#4db8ff"
           },
           {
@@ -323,22 +354,22 @@
   "contact": {
     "subtitle": "Get in Touch",
     "downloadCV": "Download CV",
-    "cvAts": "CV (ATS-friendly)",
+    "cvAts": "CV (ATS-Friendly)",
     "cvClassic": "CV (Classic)",
-    "details": "Contact details",
+    "details": "Contact Details",
     "form": {
       "nameLabel": "Your Name:",
-      "namePlaceholder": "What's your name?",
+      "namePlaceholder": "What is your name?",
       "emailLabel": "Your Email:",
-      "emailPlaceholder": "What's your email address?",
+      "emailPlaceholder": "What is your email address?",
       "messageLabel": "Your Message:",
-      "messagePlaceholder": "What do you want to say?",
+      "messagePlaceholder": "What would you like to say?",
       "send": "Send",
       "sending": "Sending..."
     },
     "snackbar": {
       "success": "Your email has been successfully delivered.",
-      "error": "Your email delivery was unsuccessful."
+      "error": "Your email could not be delivered."
     }
   },
   "goNext": "Next section"

@@ -50,11 +50,14 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
         transform: isVisible ? "translateY(0)" : "translateY(40px)",
         transition: "opacity 1s ease-out, transform 1s ease-out",
         transitionDelay,
+        width: "100%",
+        minWidth: 0,
       }}
     >
       <Box
         sx={{
           width: "100%",
+          minWidth: 0,
           height: isMobile ? "auto" : isMediumScreen ? 450 : 600,
           display: "flex",
           flexDirection: "column",
@@ -98,6 +101,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
             <Box
               sx={{
                 flex: 1,
+                minWidth: 0,
                 color: responsiveTextColor,
                 p: isMediumScreen ? 2 : 3,
                 display: "flex",
@@ -112,6 +116,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
                     fontWeight: 700,
                     mb: isMediumScreen ? 1.25 : 2,
                     fontSize: { xs: "1.2rem", md: "1.15rem", lg: "1.22rem", xl: "1.3rem" },
+                    overflowWrap: "anywhere",
                   }}
                 >
                   {project.name}
@@ -127,6 +132,7 @@ export const ProjectCard = ({ project, index, isGithubCard }: Props) => {
                     WebkitBoxOrient: "vertical",
                     WebkitLineClamp: isMediumScreen ? 8 : "unset",
                     overflow: "hidden",
+                    overflowWrap: "anywhere",
                   }}
                 >
                   <Trans

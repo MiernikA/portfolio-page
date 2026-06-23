@@ -15,6 +15,7 @@ import polishFlagUrl from "./img/lang/pl_lang.svg";
 import projectBallsPreview from "./img/projects/balls.gif";
 import projectBestiePreview from "./img/projects/bestie.gif";
 import projectBotshooterPreview from "./img/projects/botshooter.gif";
+import projectIotaPreview from "./img/projects/iota.gif";
 import projectMp3Preview from "./img/projects/mp3.gif";
 import projectPhysicsPreview from "./img/projects/physics.gif";
 import projectSnakePreview from "./img/projects/snake.gif";
@@ -82,6 +83,7 @@ export const projectPreviews = {
   balls: projectBallsPreview,
   bestie: projectBestiePreview,
   botshooter: projectBotshooterPreview,
+  iota: projectIotaPreview,
   mp3: projectMp3Preview,
   physics: projectPhysicsPreview,
   snake: projectSnakePreview,

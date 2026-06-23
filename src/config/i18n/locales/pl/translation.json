@@ -4,21 +4,20 @@
     "about": "O mnie",
     "experience": "Doświadczenie",
     "skills": "Umiejętności",
-    "projects": "Projekty",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "projects": "Projekty"
   },
   "header": {
     "greeting": "Cześć, jestem",
-    "sub1": "Programista full-stack",
+    "sub1": "Full-Stack Software Engineer",
     "sub2": "Projektant UI/UX",
     "sub3": "Pasjonat gier"
   },
-
   "about": {
     "overview": "Podsumowanie",
-    "content": "Swoją przygodę z programowaniem rozpocząłem w szkole średniej, około osiem lat temu, koncentrując się na <orange>projektowaniu interfejsów użytkownika</orange> i <orange>frontendzie</orange>. W ciągu ostatnich dwóch lat kariery zawodowej poszerzyłem swoje umiejętności w zakresie <orange>backendu</orange> oraz <orange>zarządzania bazami danych</orange>, stając się bardziej elastyczny i chętny do podejmowania pracy w nowych dla mnie dziedzinach. Zarówno studia, jak i praca zawodowa pozwoliły mi zdobyć cenne <orange>doświadczenie zespołowe</orange> — aktywnie uczestnicząc w przeglądach kodu, planowaniu projektów i dyskusjach technicznych. Cztery lata pracy jako korepetytor dodatkowo wzmocniły moje <orange>umiejętności komunikacyjne</orange> i dydaktyczne. Jestem <orange>szybko uczącą się osobą</orange>, która ceni <orange>współpracę</orange> i ciągły rozwój, dążąc do tworzenia projektów łączących funkcjonalność z doskonałym doświadczeniem użytkownika.",
+    "content": "Swoją przygodę z programowaniem rozpocząłem w szkole średniej około osiem lat temu, skupiając się na <orange>projektowaniu UI</orange> i <orange>frontendzie</orange>. W ciągu ostatnich dwóch lat kariery zawodowej rozwinąłem umiejętności w zakresie <orange>backendu</orange> oraz <orange>zarządzania bazami danych</orange>, stając się bardziej wszechstronny i otwarty na naukę.<br/> Zarówno studia, jak i praca zawodowa pozwoliły mi zdobyć solidne <orange>doświadczenie zespołowe</orange>, obejmujące aktywny udział w code review, planowaniu projektów i dyskusjach zespołowych. Cztery lata pracy jako korepetytor wzmocniły również moje umiejętności <orange>komunikacyjne</orange> i dydaktyczne.<br/> Jestem osobą, która <orange>szybko się uczy</orange>, lubi współpracę i ciągły rozwój, a moim celem jest tworzenie projektów łączących funkcjonalność z bardzo dobrym doświadczeniem użytkownika.",
     "tiles": {
-      "sdlc": "Rozumienie zasad SDLC",
+      "sdlc": "Znajomość zasad SDLC",
       "knowledge": "Otwartość na zdobywanie nowej wiedzy",
       "scrum": "Doświadczenie w metodykach Agile",
       "communicative": "Komunikatywność i elastyczność",
@@ -34,16 +33,16 @@
     "items": [
       {
         "img": "img/experience/codibly.png",
-        "title": "Stażysta tester – Codibly S.A.",
-        "date": "Luty 2019 - Maj 2019",
-        "description": "Moja pierwsza praca w sektorze IT, odbywana w ramach praktyk zawodowych w szkole średniej. Był to okres intensywnej nauki, w którym mogłem poznać realia pracy zespołowej oraz proces tworzenia i testowania oprogramowania. Brałem udział w szkoleniach, spotkaniach projektowych i codziennych zadaniach, stopniowo rozwijając swoje umiejętności techniczne oraz zrozumienie dobrych praktyk w branży.",
+        "title": "Stażysta QA – Codibly S.A.",
+        "date": "Lut. 2019 – Maj 2019",
+        "description": "Moja pierwsza praca w sektorze IT, zrealizowana w ramach programu praktyk w szkole średniej. Był to okres intensywnej nauki, podczas którego poznałem dynamikę pracy zespołowej oraz proces tworzenia i testowania oprogramowania. Uczestniczyłem w szkoleniach, spotkaniach projektowych i codziennych zadaniach, stopniowo rozwijając umiejętności techniczne oraz zrozumienie dobrych praktyk branżowych.",
         "responsibilities": [
-          "Przeprowadzanie testów obciążeniowych z wykorzystaniem JMeter",
-          "Pisanie testów do komponentów frontendowych",
+          "Przeprowadzanie testów obciążeniowych z użyciem JMeter",
+          "Pisanie testów dla komponentów frontendowych",
           "Wykonywanie manualnych testów jednostkowych i raportowanie wyników",
-          "Udział w szkoleniach z zakresu metodologii testowania oprogramowania",
+          "Udział w szkoleniach z metodologii testowania oprogramowania",
           "Uczestnictwo w spotkaniach zespołowych dotyczących organizacji pracy i planowania zadań",
-          "Tworzenie prostych aplikacji webowych w celu rozwoju umiejętności technicznych"
+          "Tworzenie prostych aplikacji webowych w celu rozwijania umiejętności technicznych"
         ],
         "technologies": [
           "JMeter",
@@ -58,20 +57,20 @@
       },
       {
         "img": "img/experience/aptiv.png",
-        "title": "Asystent technik – Aptiv Services Polska",
-        "date": "Paźdź. 2020 - Lis. 2020",
-        "description": "Drugi staż odbyty w ramach szkoły średniej, tym razem skoncentrowany w większym stopniu na pracy z systemami sieciowymi oraz ich fizycznym utrzymaniem. Zajmowałem się montażem układów scalonych, udzielałem wsparcia technicznego bardziej doświadczonym pracownikom, a także tworzyłem proste skrypty testowe dla zamkniętych układów sieciowych.",
+        "title": "Asystent techniczny – Aptiv Services Poland",
+        "date": "Paź. 2020 – Lis. 2020",
+        "description": "Mój drugi staż, zrealizowany w ramach programu szkoły średniej, był mocniej skoncentrowany na pracy z systemami sieciowymi oraz ich fizycznym utrzymaniem. Odpowiadałem za montaż układów scalonych, wsparcie techniczne dla bardziej doświadczonych pracowników oraz tworzenie prostych skryptów w Pythonie do testowania zamkniętych systemów sieciowych.",
         "responsibilities": [
-          "Utrzymanie fizycznej infrastruktury sieciowej i systemów elektronicznych",
-          "Instalacja i testowanie układów scalonych oraz komponentów sprzętowych",
-          "Świadczenie wsparcia technicznego typu helpdesk",
+          "Utrzymywanie fizycznej infrastruktury sieciowej i elektronicznej",
+          "Instalowanie i testowanie układów scalonych oraz komponentów sprzętowych",
+          "Świadczenie wsparcia technicznego helpdesk i wsparcia na miejscu",
           "Tworzenie prostych skryptów w Pythonie do testów i diagnostyki",
-          "Diagnozowanie usterek i wykonywanie drobnych napraw sprzętu"
+          "Diagnozowanie problemów i wykonywanie drobnych napraw sprzętu"
         ],
         "technologies": [
           "Python",
           "Elektronika",
-          "Instalacja komponentów sprzętowych",
+          "Instalacja sprzętu",
           "Diagnostyka i rozwiązywanie problemów"
         ]
       },
@@ -79,11 +78,11 @@
         "img": "img/experience/edualy.png",
         "title": "Korepetytor – Edualy",
         "date": "Wrz. 2021 – obecnie",
-        "description": "Podczas pracy jako korepetytor rozwijałem umiejętności komunikacji, cierpliwości oraz indywidualnego podejścia do ucznia. Nauczyłem się skutecznie przekazywać złożone zagadnienia w przystępny sposób, budować motywację i wspierać rozwój kompetencji analitycznych oraz samodzielnego myślenia.",
+        "description": "Podczas pracy jako korepetytor rozwinąłem silne umiejętności komunikacyjne, cierpliwość oraz indywidualne podejście do uczniów. Nauczyłem się wyjaśniać złożone zagadnienia w przystępny sposób, budować motywację oraz wspierać rozwój analitycznego myślenia i samodzielnego rozwiązywania problemów.",
         "responsibilities": [
           "Przygotowywanie uczniów do egzaminów maturalnych z informatyki, matematyki i fizyki",
           "Prowadzenie zajęć przygotowujących do egzaminów zawodowych",
-          "Udzielanie korepetycji na poziomie akademickim z technologii webowych oraz zagadanień związanych z algorytmami i strukturami danych"
+          "Udzielanie korepetycji na poziomie akademickim z technologii webowych, algorytmów i struktur danych"
         ],
         "technologies": [
           "Python",
@@ -99,20 +98,20 @@
       {
         "img": "img/experience/codibly-spyro.png",
         "title": "Junior Software Developer – Codibly",
-        "date": "Cze. 2024 – obecnie",
-        "description": "Jako członek zespołu deweloperskiego uczestniczyłem w realizacji komercyjnych projektów z obszaru e-mobilności i energii odnawialnej. Moja praca obejmowała projektowanie i implementację rozwiązań zarówno po stronie klienta, jak i serwera, a także aktywny udział w planowaniu, analizie wymagań oraz usprawnianiu procesów w zespole. Współpracowałem bezpośrednio z klientami, prezentując wyniki prac i proponując usprawnienia funkcjonalne, miałem okazję służyć radą w zakresie tworzenie interfejsów użytkownika. Wspierałem również proces rekrutacji stażystów oraz regularnie poszerzałem swoje kompetencje, ucząc się nowych technologii.",
+        "date": "Cze. 2024 – Sty. 2026",
+        "description": "Jako członek zespołu deweloperskiego uczestniczyłem w realizacji komercyjnych projektów z obszaru e-mobilności i energii odnawialnej. Moja praca obejmowała projektowanie oraz tworzenie rozwiązań po stronie klienta i serwera, a także aktywny udział w planowaniu, analizie wymagań i usprawnianiu procesów w zespole. Współpracowałem bezpośrednio z klientami, prezentowałem postępy prac, proponowałem usprawnienia funkcjonalne oraz doradzałem w zakresie UX/UI. Dodatkowo wspierałem proces rekrutacji stażystów i stale poszerzałem swoje kompetencje, ucząc się nowych technologii.",
         "responsibilities": [
-          "Projektowanie i implementacja funkcjonalności frontendu i backendu",
-          "Współpraca z zespołem projektowym nad doprecyzowaniem wymagań i planowaniem sprintów",
+          "Projektowanie i implementacja funkcjonalności frontendowych i backendowych",
+          "Współpraca z zespołem projektowym przy doprecyzowywaniu wymagań i planowaniu sprintów",
           "Utrzymywanie i rozwijanie istniejących modułów systemu",
-          "Udział w codziennych spotkaniach zespołu Scrum oraz przeglądach kodu",
-          "Udział w procesie rekrutacji stażystów i wspieranie ich rozwoju technicznego",
-          "Regularne prezentowanie postępów i wyników prac klientowi",
-          "Nauka i wdrażanie nowych technologii w odpowiedzi na potrzeby projektowe",
-          "Aktywne doradzanie w kwestiach projektowych oraz UX/UI"
+          "Udział w codziennych spotkaniach Scrum i przeglądach kodu",
+          "Pomoc w rekrutacji stażystów i wspieranie ich rozwoju technicznego",
+          "Regularne prezentowanie klientowi postępów i rezultatów prac",
+          "Nauka i wdrażanie nowych technologii w odpowiedzi na potrzeby projektu",
+          "Aktywny wkład w kwestie projektowe oraz UX/UI"
         ],
         "technologies": [
-          "ReactJS",
+          "React",
           "Material UI",
           "Java",
           "Spring Boot",
@@ -129,20 +128,20 @@
         "img": "img/experience/solidstudio.png",
         "title": "Programista Node.js – Solidstudio",
         "date": "Sty. 2026 – obecnie",
-        "description": "Jako członek zespołu wsparcia technicznego zajmowałem się utrzymaniem oraz rozwojem głównego produktu firmy, dostarczającego rozwiązania e-mobility dla klientów na całym świecie. Odpowiadałem za bezpośrednią komunikację z klientami, weryfikację i rozwiązywanie zgłaszanych problemów oraz implementację nowych funkcjonalności na podstawie ich wymagań. Dodatkowo współtworzyłem narzędzie oparte na AI, mające na celu automatyzację najbardziej czasochłonnych procesów związanych z obsługą i analizą zgłoszeń.",
+        "description": "Jako członek zespołu wsparcia technicznego pracuję nad utrzymaniem i rozwojem głównego produktu firmy, który dostarcza rozwiązania e-mobility klientom na całym świecie. Odpowiadam za bezpośrednią komunikację z klientami, weryfikację i rozwiązywanie zgłaszanych problemów oraz implementację nowych funkcjonalności na podstawie ich wymagań. Dodatkowo współtworzę narzędzie oparte na AI, którego celem jest automatyzacja najbardziej czasochłonnych elementów analizy i obsługi zgłoszeń.",
         "responsibilities": [
-          "Naprawa błędów oraz implementacja nowych funkcjonalności na podstawie zgłoszeń klientów",
-          "Bezpośredni kontakt z klientami oraz udział w analizie i planowaniu wymagań",
+          "Naprawianie błędów i implementowanie funkcjonalności na podstawie zgłoszeń klientów",
+          "Bezpośrednia komunikacja z klientami oraz udział w planowaniu i analizie wymagań",
           "Pełnienie roli eksperta technicznego w zakresie protokołów e-mobility",
-          "Regularne monitorowanie stanu infrastruktury i reagowanie na pojawiające się problemy",
-          "Rozwój narzędzia opartego na AI do optymalizacji obsługi zgłoszeń klientów"
+          "Regularne monitorowanie stanu infrastruktury i reagowanie na powtarzające się problemy",
+          "Rozwijanie narzędzia opartego na AI, służącego optymalizacji obsługi zgłoszeń klientów"
         ],
         "technologies": [
-          "NodeJs",
-          "NestJs",
+          "Node.js",
+          "NestJS",
           "Java",
           "Python",
-          "FastApi",
+          "FastAPI",
           "AI Development",
           "PostgreSQL",
           "AWS",
@@ -163,25 +162,74 @@
       {
         "name": "Weather App",
         "image": "img/projects/weather.gif",
-        "description": "Weather App to aplikacja typu full-stack, która dostarcza <orange>prognozy pogody</orange> wraz z szacunkami produkcji energii z <orange>paneli fotowoltaicznych</orange> na nadchodzący tydzień, bazując na <orange>geolokalizacji</orange> użytkownika.<br/>Frontend został stworzony w React z użyciem <orange>Material-UI</orange> i komunikuje się z moim endpointem w Node.js. Aplikacja oferuje również <orange>tryb ciemny</orange>.",
+        "description": "Weather App to aplikacja full-stack, która dostarcza <orange>prognozy pogody</orange> wraz z szacunkami energii generowanej przez <orange>panele fotowoltaiczne</orange> w nadchodzącym tygodniu, na podstawie <orange>geolokalizacji</orange>.<br/> Frontend został zbudowany w React z użyciem <orange>Material UI</orange> i korzysta z mojego endpointu w Node.js. Aplikacja oferuje również <orange>tryb ciemny</orange>.",
         "tags": [
-          { "name": "React", "color": "#00ffcc" },
-          { "name": "Node", "color": "#00ffcc" },
-          { "name": "App", "color": "#ff66cc" },
-          { "name": "Full-Stack", "color": "#ffc94d" }
+          {
+            "name": "React",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Node.js",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Aplikacja",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Full-Stack",
+            "color": "#ffc94d"
+          }
         ],
         "demoLink": "https://weather-app-sigma-navy.vercel.app/",
         "codeLink": "https://github.com/MiernikA/weather-app"
       },
       {
+        "name": "IOTA Network Visualizer",
+        "image": "img/projects/iota.gif",
+        "description": "Lekki <orange>dashboard sieci IOTA</orange> do wizualizacji aktywności blockchaina na żywo, danych walidatorów, epok i checkpointów.<br/>Aplikacja została zbudowana z użyciem <orange>React</orange>, <orange>TypeScript</orange> i <orange>Vite</orange>, a dane pobiera przez <orange>endpointy IOTA JSON-RPC</orange>. Zawiera interaktywne wykresy oparte na <orange>Chart.js</orange> oraz trójwymiarowy glob walidatorów zbudowany przy użyciu <orange>Three.js</orange> i <orange>Globe.gl</orange>.",
+        "tags": [
+          {
+            "name": "React",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "TypeScript",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Dashboard",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Frontend",
+            "color": "#ffc94d"
+          }
+        ],
+        "demoLink": "https://miernika.github.io/iota-network-visualizer",
+        "codeLink": "https://github.com/MiernikA/iota-network-visualizer"
+      },
+      {
         "name": "Color Lines",
         "image": "img/projects/balls.gif",
-        "description": "Projekt jest repliką popularnej gry <orange>Color Lines</orange> (połącz 5). <br/>Od strony technicznej obejmuje <orange>siatkę</orange> elementów div generowanych w <orange>losowych pozycjach</orange> z losowo dobranymi kolorami kulek. Warunek zwycięstwa opiera się na <orange>liczbie kulek</orange> na planszy, a sednem rozgrywki jest algorytm <orange>Depth-First Search (DFS)</orange> używany do <orange>wyznaczania ścieżki</orange>. Projekt został w całości napisany w TypeScript.",
+        "description": "Ten projekt jest repliką popularnej gry <orange>Color Lines</orange>, znanej również jako Match 5.<br/>Od strony technicznej opiera się na <orange>siatce</orange> elementów div generowanych w <orange>losowych pozycjach</orange>, z kulkami o losowych kolorach.<br/>Rdzeniem gry jest algorytm <orange>Depth-First Search (DFS)</orange> używany do <orange>wyznaczania ścieżki</orange>. Projekt został napisany w TypeScript.",
         "tags": [
-          { "name": "Szkoła średnia", "color": "#4db8ff" },
-          { "name": "TypeScript", "color": "#00ffcc" },
-          { "name": "Gra", "color": "#ff66cc" },
-          { "name": "Frontend", "color": "#ffc94d" }
+          {
+            "name": "Szkoła Średnia",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "TypeScript",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Gra",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Frontend",
+            "color": "#ffc94d"
+          }
         ],
         "demoLink": "https://miernika.github.io/Color-Lines/",
         "codeLink": "https://github.com/MiernikA/Color-Lines"
@@ -189,10 +237,10 @@
       {
         "name": "Bot Shooter",
         "image": "img/projects/botshooter.gif",
-        "description": "Strzelanka arenowa sterowana przez <orange>AI</orange>, zbudowana w <orange>Pygame</orange>, w której boty walczą ze sobą. Celem jest zdobycie 5 zabójstw jak najszybciej. \n\nBoty rywalizują na zamkniętej arenie, zbierając zasoby i eliminując przeciwników. Ich zachowanie oparte jest na <orange>state machine</orange>, a mapa reprezentowana jest jako graf z implementacją <orange>A* pathfinding</orange>.",
+        "description": "Sterowana przez <orange>AI</orange> strzelanka arenowa zbudowana w <orange>Pygame</orange>, w której boty nawigują, wykrywają przeciwników i walczą ze sobą. Celem jest jak najszybsze zdobycie 5 zabójstw.\n\nBoty rywalizują na zamkniętej arenie, zbierając zasoby. Ich zachowanie jest sterowane przez <orange>maszynę stanów</orange>, a mapa to graf implementujący <orange>A*</orange>.",
         "tags": [
           {
-            "name": "Studia",
+            "name": "Uniwersytet",
             "color": "#4db8ff"
           },
           {
@@ -207,17 +255,22 @@
         "codeLink": "https://github.com/MiernikA/AI-Basics-UJ"
       },
       {
-        "name": "Bestie i Kłusownicy",
+        "name": "Hunters and Beasts",
         "image": "img/projects/bestie.gif",
-        "description": "Turowa <orange>wieloosobowa gra planszowa</orange> wspierana przez aplikację webową, w której gracze wcielają się w łowców tropiących tajemnicze bestie na dynamicznej mapie.<br/><br/>Projekt łączy <orange>frontend w Vue</orange> z <orange>backendem w FastAPI</orange>, obsługując stan gry w czasie rzeczywistym przy użyciu <orange>WebSocketów</orange>. Główne mechaniki obejmują <orange>zachowania AI oparte na stanach</orange> dla bestii, zarządzanie turami oraz interaktywną rozgrywkę.",
+        "description": "Aplikacja webowa wspierająca <orange>wieloosobową grę planszową</orange> o łowcach tropiących niebezpieczne bestie.<br/><br/>Projekt łączy <orange>frontend w Vue</orange> z <orange>backendem w FastAPI</orange>, obsługując stan gry w czasie rzeczywistym przez <orange>WebSockety</orange>. Główne mechaniki obejmują <orange>zachowania AI oparte na stanach</orange> dla bestii.",
         "tags": [
-          { "name": "Vue.js", "color": "#00ffcc" },
           {
-            "name": "FastApi",
+            "name": "Vue.js",
             "color": "#00ffcc"
           },
-          { "name": "Full-Stack", "color": "#ffc94d" },
-          { "name": "Gra", "color": "#ff66cc" },
+          {
+            "name": "FastAPI",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Full-Stack",
+            "color": "#ffc94d"
+          },
           {
             "name": "AI",
             "color": "#ff66cc"
@@ -229,10 +282,10 @@
       {
         "name": "Physics Simulation",
         "image": "img/projects/physics.gif",
-        "description": "Ten projekt to zbiór interaktywnych <orange>symulacji fizycznych</orange> stworzonych przy użyciu <orange>pygame</orange>. Zawiera implementacje takich systemów jak <orange>model masowo-sprężynowy</orange>, <orange>symulacja materiału</orange> z wykorzystaniem <orange>integracji Verlet’a</orange> oraz <orange>mechanika kolizji</orange> dla ciał miękkich i sztywnych — wraz z wizualizacjami oraz szczegółowymi wzorami matematycznymi umieszczonymi w pliku README.",
+        "description": "Ten projekt to zbiór interaktywnych <orange>symulacji fizycznych</orange> stworzonych przy użyciu <orange>Pygame</orange>. Zawiera implementacje systemów takich jak <orange>modele masowo-sprężynowe</orange>, <orange>symulacja tkaniny</orange> z użyciem <orange>całkowania Verleta</orange> oraz <orange>mechanika kolizji</orange> dla ciał miękkich i sztywnych, wraz z wizualizacjami i szczegółowymi wzorami matematycznymi umieszczonymi w README.",
         "tags": [
           {
-            "name": "Studia",
+            "name": "Uniwersytet",
             "color": "#4db8ff"
           },
           {
@@ -247,14 +300,26 @@
         "codeLink": "https://github.com/MiernikA/Programowanie-fizyki"
       },
       {
-        "name": "Mp3 Player",
+        "name": "MP3 Player",
         "image": "img/projects/mp3.gif",
-        "description": "Projekt pełniący rolę <orange>odtwarzacza muzyki</orange> z interfejsem i możliwością <orange>przesyłania</orange> własnych playlist.<br/>Większość logiki opiera się na backendzie w NodeJS, który odpowiada za <orange>odczyt albumów muzycznych</orange> z wewnętrznego folderu projektu oraz <orange>przechowywanie przesłanych przez użytkownika albumów</orange>. Po stronie frontendu zastosowano prosty <orange>CSS</orange> z dodatkowymi <orange>animacjami</orange>.",
+        "description": "Projekt pełniący rolę odtwarzacza muzyki z interfejsem i możliwością <orange>przesyłania</orange> własnych playlist.<br/>Większość projektu koncentruje się na <orange>backendzie w Node.js</orange>, który odpowiada za <orange>odczytywanie albumów muzycznych</orange> z wewnętrznego folderu projektu oraz <orange>przchowywanie customowych albumów</orange>.",
         "tags": [
-          { "name": "Szkoła średnia", "color": "#4db8ff" },
-          { "name": "Node", "color": "#00ffcc" },
-          { "name": "Aplikacja", "color": "#ff66cc" },
-          { "name": "Full-Stack", "color": "#ffc94d" }
+          {
+            "name": "Szkoła Średnia",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "Node.js",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Aplikacja",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Full-Stack",
+            "color": "#ffc94d"
+          }
         ],
         "demoLink": "https://miernika.github.io/mp3-player-demo/",
         "codeLink": "https://github.com/MiernikA/mp3-player"
@@ -262,12 +327,24 @@
       {
         "name": "Snake Game",
         "image": "img/projects/snake.gif",
-        "description": "Snake Game to w zasadzie moje pierwsze spotkanie z programowaniem, projekt z <orange>aplikacji klienckich</orange> w pierwszej klasie technikum. <br/>Opiera się na prostym <orange>interwale</orange> sterującym „ruchem” węża, losowo generowanej pozycji owocu i wykorzystuje nieskomplikowany <orange>mechanizmy kolizji</orange>. Muszę przyznać, że obecność projektu tutaj wynika głównie z sentymentu.",
+        "description": "Snake Game był w zasadzie moim pierwszym kontaktem z programowaniem. Powstał w pierwszej klasie szkoły średniej.<br/>Projekt opiera się na prostym <orange>interwale</orange>, losowo generuje pozycję owocu i wykorzystuje nieskomplikowany <orange>mechanizm kolizji</orange>. Muszę przyznać, że jego obecność tutaj wynika przede wszystkim z sentymentu.",
         "tags": [
-          { "name": "Szkoła średnia", "color": "#4db8ff" },
-          { "name": "JavaScript", "color": "#00ffcc" },
-          { "name": "Gra", "color": "#ff66cc" },
-          { "name": "Frontend", "color": "#ffc94d" }
+          {
+            "name": "Szkoła Średnia",
+            "color": "#4db8ff"
+          },
+          {
+            "name": "JavaScript",
+            "color": "#00ffcc"
+          },
+          {
+            "name": "Gra",
+            "color": "#ff66cc"
+          },
+          {
+            "name": "Frontend",
+            "color": "#ffc94d"
+          }
         ],
         "demoLink": "https://miernika.github.io/Snake-Game/",
         "codeLink": "https://github.com/MiernikA/Snake-Game"
@@ -277,8 +354,8 @@
   "contact": {
     "subtitle": "Skontaktuj się ze mną",
     "downloadCV": "Pobierz CV",
-    "cvAts": "CV (ATS-friendly)",
-    "cvClassic": "CV (Klasyczne)",
+    "cvAts": "CV (zgodne z ATS)",
+    "cvClassic": "CV (klasyczne)",
     "details": "Dane kontaktowe",
     "form": {
       "nameLabel": "Twoje imię:",
