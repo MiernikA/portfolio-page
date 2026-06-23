@@ -9,7 +9,7 @@ Developed with TypeScript and Vite, focused on speed, clarity, and user-friendly
 
 🌐 Live Preview:  
 
-👉 https://portfolio-page-ochre-three.vercel.app
+👉 https://miernika.github.io/portfolio-page/
 
 ---
 
