@@ -231,7 +231,7 @@
             "color": "#ffc94d"
           }
         ],
-        "demoLink": "https://miernika.github.io/Color-Lines/",
+        "demoLink": "https://miernika.github.io/color-lines/",
         "codeLink": "https://github.com/MiernikA/Color-Lines"
       },
       {
@@ -277,7 +277,7 @@
           }
         ],
         "demoLink": "https://bestie-klusownicy.vercel.app/",
-        "codeLink": "https://github.com/MiernikA/Bestie-Klusownicy"
+        "codeLink": "https://github.com/MiernikA/bestie-klusownicy"
       },
       {
         "name": "Physics Simulation",
@@ -297,7 +297,7 @@
             "color": "#ff66cc"
           }
         ],
-        "codeLink": "https://github.com/MiernikA/Programowanie-fizyki"
+        "codeLink": "https://github.com/MiernikA/programowanie-fizyki"
       },
       {
         "name": "MP3 Player",
@@ -346,8 +346,8 @@
             "color": "#ffc94d"
           }
         ],
-        "demoLink": "https://miernika.github.io/Snake-Game/",
-        "codeLink": "https://github.com/MiernikA/Snake-Game"
+        "demoLink": "https://miernika.github.io/snake-game/",
+        "codeLink": "https://github.com/MiernikA/snake-game"
       }
     ]
   },
